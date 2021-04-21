@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <script src="assets/js/html2canvas.js"></script>
+          <script src="assets/js/html2canvas.min.js"></script>
+          <title>Goal Achievement</title>          
+          <link href="assets/css/code.css" rel="stylesheet">
+          <script src="assets/js/code.js"></script>
+        
+        </head>
+
+  <body id="page-top">
+	  
+
+    <div>
+
+        <p>Goal in SEK:</p>
+        <input name="goal" id="goal" value="30000000" onchange="updateMeter()" onkeyup="updateMeter()">
+
+        <p>Current amount SEK:</p>
+        <input name="current" id="current" value="10000000" onchange="updateMeter()" onkeyup="updateMeter()">
+
+    </div>
+    
+    <div id="capture" class="container">
+
+        <img class="logo" src="/assets/img/wakf.webp">
+        <div>
+        <p id="htext" class="htext"></p>
+        </div>
+        <div class="meter green nostripes">
+            <span id="bar" ></span>
+        </div>
+        <div>
+            <p id="btext" class="btext"> Keep up the great work!</p>
+        </div>
+    </div>
+
+    <!-- leaving out for now  as it needs optimizatio,, taking a snapshot could work
+    <button onclick="makeImage()">Generate Image</button>
+    <script src="assets/js/html2canvas.js"></script>
+    <script src="assets/js/html2canvas.min.js"></script>
+    -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    
+    <!-- Code for progress bar -->    
+    <script src="assets/js/code.js"></script>
+
+  </body>
+</html>
