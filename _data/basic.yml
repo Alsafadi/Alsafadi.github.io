@@ -1,0 +1,22 @@
+main:
+  title: "CV - Hani N. Alsafadi"
+  name: "Hani N. Alsafadi"
+  demographics:
+    - item: "Personnummer"
+      value: "19910317-7110"
+    - item: "Nationality"
+      value: "Palestinian"
+    - item: "Gender"
+      value: "Male"
+    - item: "Marital Status"
+      value: "Married"
+
+  homeaddress: "Ragnvallagatan 16A LGH 1101, 256 63 Helsingborg, Sweden"
+  workaddress: "Klinikgatan 26, 223 62 Lund, Sweden"
+  cell: +46(0)768722033
+  phone: +46(0)46 222 9671
+  email: hani.alsafadi@med.lu.se
+  img: /assets/img/alsafadi.png
+
+config:
+    count: 5

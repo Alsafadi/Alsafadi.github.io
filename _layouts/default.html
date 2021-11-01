@@ -3,53 +3,97 @@
 
     <head>
         <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
           <script src="assets/js/html2canvas.js"></script>
           <script src="assets/js/html2canvas.min.js"></script>
-          <title>Goal Achievement</title>          
-          <link href="assets/css/code.css" rel="stylesheet">
-          <script src="assets/js/code.js"></script>
+          <title>{{ site.data.basic.main.title }}</title>          
+          <link href="assets/css/main.css" rel="stylesheet">
+          <script src="assets/js/main.js"></script>
         
         </head>
 
   <body id="page-top">
-	  
+	  <div class="page-content">
+    <div id="profile">
+        <div id="profile_image">
+          <img class="rounded-circle" src="{{ site.data.basic.main.img }}" alt="">
+        </div>
+        <div id="basic-info">
+          <ul>
+            {% if site.data.basic.main.name %}
+            <li class="name">{{ site.data.basic.main.name }}</li>
+            {% endif %}
+            {% if site.data.basic.main.demographics %}
+            <li>
+            {% for i in site.data.basic.main.demographics %}
+            <span>{{ i.value }} ● </span>
+            {% endfor %}
+            </li>
+            {% endif %}
+            {% if site.data.basic.main.homeaddress %}
+            <li>{{ site.data.basic.main.homeaddress }}</li>
+            {% endif %}
+            {% if site.data.basic.main.workaddress %}
+            <li>{{ site.data.basic.main.workaddress }}</li>
+            {% endif %}
+            <li> {{ site.data.basic.main.cell }}  ●  {{ site.data.basic.main.phone }}
+            </li>
+            <li>{{ site.data.basic.main.email }}</li>
+          </ul>
+        </div>
+    </div>
 
-    <div>
+    <div id="container">
+      
+      {% assign groups = site.data.content | group_by: "section" %}
+     
+      {% for g in groups %}
+      {% assign gindex= forloop.index %}
+      {% assign value = forloop.index | modulo:2 %}
+      {% if value == 0 %} {% assign ulclass="evenul" %} {% else %} {% assign ulclass="oddul" %} {% endif %}
+      <div class="{{ ulclass }}">
+      <h4>{{ g.name }}</h4>
+      <ul>
+        {% for item in g.items %}
+        {% assign lastindex = forloop.length %}
+        {% if forloop.index > site.data.basic.config.count %} {% assign disp="display:none;" %} {% else %} {% assign disp="display:block;" %} {% endif %}
+        <li id="{{ gindex }}-{{ forloop.index }}" style = "{{ disp }}"> 
+        <div class="fullitem">
+          <div class="itemleft">
+          {{item.from }} {% if item.to %} - {{ item.to }}{% endif %}
+          </div>
 
-        <p>Goal in SEK:</p>
-        <input name="goal" id="goal" value="30000000" onchange="updateMeter()" onkeyup="updateMeter()">
+          <div class="itemright">
+          {% if item.primary or item.city or item.country %}
+          <div class="line">
+          <div class="lineleft"><strong>{{ item.primary }}. </strong>{% if item.city %}{{ item.city }}, {% endif %}{% if item.country %}{{ item.country }}{% endif %}</div>
+          </div>          
+          {% endif %}
+          {% if item.secondary or item.other %}
+          <div class="line">
+          <div class="lineleft">{% if item.secondary %}{{ item.secondary }}. {% endif %} <i>{{ item.other}}</i></div>
+          </div>
+          {% endif %}
+          {% if item.otherhidden %}
+          <div class="line">
+          <div class="lineleft"><i> "{{ item.otherhidden }}" </i></div>
+          </div>
+          {% endif %}
+        </div>
+        </div>
+        </li>
+        {% endfor%}
+      {% if lastindex > site.data.basic.config.count %}
+        <a onclick="toggleDisplay('{{ gindex }}',{{ site.data.basic.config.count }}-1)" class="moreinfo">Show/Hide More!</a>
+      {% endif %}
+      </ul>
+      </div>
+      {% endfor %}
+     
 
-        <p>Current amount SEK:</p>
-        <input name="current" id="current" value="10000000" onchange="updateMeter()" onkeyup="updateMeter()">
 
     </div>
     
-    <div id="capture" class="container">
-
-        <img class="logo" src="/assets/img/wakf.webp">
-        <div>
-        <p id="htext" class="htext"></p>
-        </div>
-        <div class="meter green nostripes">
-            <span id="bar" ></span>
-        </div>
-        <div>
-            <p id="btext" class="btext"> Keep up the great work!</p>
-        </div>
-    </div>
-
-    <!-- leaving out for now  as it needs optimizatio,, taking a snapshot could work
-    <button onclick="makeImage()">Generate Image</button>
-    <script src="assets/js/html2canvas.js"></script>
-    <script src="assets/js/html2canvas.min.js"></script>
-    -->
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    
-    <!-- Code for progress bar -->    
-    <script src="assets/js/code.js"></script>
-
+  </div>
   </body>
 </html>
