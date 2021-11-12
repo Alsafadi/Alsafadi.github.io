@@ -16,3 +16,30 @@ if(index>Y && window.getComputedStyle(d).display=="block") {
 }
 }
 }
+
+function navigate(X){
+    document.getElementById(X).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
+//Sticky Header
+$(window).scroll(function() {
+
+    if ($(window).scrollTop() > 300) {
+        $("#dropdown").addClass('scrolled');
+    } else {
+        $("#dropdown").removeClass('scrolled');
+    }
+});
+
+function printcv(X){
+var prtContent = document.getElementById(X);
+var WinPrint = window.open('', '', '');
+WinPrint.document.write(prtContent.innerHTML);
+WinPrint.document.close();
+WinPrint.focus();
+WinPrint.print()
+WinPrint.close();
+
+}

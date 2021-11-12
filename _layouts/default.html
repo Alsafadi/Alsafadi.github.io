@@ -1,113 +1,150 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-          <script src="assets/js/html2canvas.js"></script>
-          <script src="assets/js/html2canvas.min.js"></script>
-          <title>{{ site.data.basic.main.title }}</title>          
-          <link href="assets/css/main.css" rel="stylesheet">
-          <link href="assets/css/code.css" rel="stylesheet">
-          <script src="assets/js/main.js"></script>
-        
-        </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
 
-  <body id="page-top">
+  <title>{{ site.data.basic.main.title }}</title>
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/code.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+</head>
 
-    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
-  	<label for="menu-icon"></label>
-  	<nav class="nav"> 		
-  		<ul class="pt-5">
-        {% assign groups = site.data.content | group_by: "section" %}
-        {% for g in groups %}
-        <li><a href="#g{{ forloop.index }}">{{ g.name }}</a></li>
-        {% endfor %}
-  		</ul>
-  	</nav>
-
-
-	  <div class="page-content">
-    <div id="profile">
-        <div id="profile_image">
+<body id="page-top">
+  <div class="page-content">  
+    <div class="profile">
+     
+        <div class="profile_image">
           <img class="rounded-circle" src="{{ site.data.basic.main.img }}" alt="">
         </div>
-        <div id="basic-info">
+
+        <div class="network noprint">
           <ul>
-            {% if site.data.basic.main.name %}
-            <li class="name">{{ site.data.basic.main.name }}</li>
-            {% endif %}
-            {% if site.data.basic.main.demographics %}
+            {% for network in site.data.basic.main.links %}
+            {%- if network.url -%}
             <li>
-            {% for i in site.data.basic.main.demographics %}
-            <span>{{ i.value }} ● </span>
+              <a href="{{ network.url }}" target="_blank">
+                <i class="{{ network.icon }} socialicon"></i>
+              </a>
+            </li>
+            {%- endif -%}
             {% endfor %}
-            </li>
-            {% endif %}
-            {% if site.data.basic.main.homeaddress %}
-            <li>{{ site.data.basic.main.homeaddress }}</li>
-            {% endif %}
-            {% if site.data.basic.main.workaddress %}
-            <li>{{ site.data.basic.main.workaddress }}</li>
-            {% endif %}
-            <li> {{ site.data.basic.main.cell }}  ●  {{ site.data.basic.main.phone }}
-            </li>
-            <li>{{ site.data.basic.main.email }}</li>
           </ul>
         </div>
+
+      <div class="basic-info">
+        <ul>
+          {% if site.data.basic.main.name %}
+          <li class="name">{{ site.data.basic.main.name }}</li>
+          {% endif %}
+          {% if site.data.basic.main.demographics %}
+          <li class="basic-item">
+            {% for i in site.data.basic.main.demographics %}
+            <span>{{ i.value }}</span>
+            {% endfor %}
+          </li>
+          {% endif %}
+          {% if site.data.basic.main.homeaddress %}
+          <li>{{ site.data.basic.main.homeaddress }}</li>
+          {% endif %}
+          {% if site.data.basic.main.workaddress %}
+          <li>{{ site.data.basic.main.workaddress }}</li>
+          {% endif %}
+          <li> {{ site.data.basic.main.cell }} ● {{ site.data.basic.main.phone }}
+          </li>
+          <li>{{ site.data.basic.main.email }}</li>
+        </ul>
+      </div>
     </div>
+<!-- <div class="noprint" onclick="print()">Print this cv</div> -->
+
+  <div class="dropdown" id="dropdown">
+  <button class="dropbtn"><i class="fas fa-bars"></i></button>
+  <div class="dropdown-content">
+    {% assign groups = site.data.content | group_by: "section" %}
+    {% for g in groups %}
+    <p onclick="navigate('#g{{ forloop.index }}')">{{ g.name }}</p>
+    {% endfor %}
+  </div>
+</div>
+
+  
 
     <div id="container">
-      
-      {% assign groups = site.data.content | group_by: "section" %}
-     
       {% for g in groups %}
       {% assign gindex= forloop.index %}
       {% assign value = forloop.index | modulo:2 %}
       {% if value == 0 %} {% assign ulclass="evenul" %} {% else %} {% assign ulclass="oddul" %} {% endif %}
-      <div class="{{ ulclass }}" id="#g{{ gindex }}">
-      <h4>{{ g.name }}</h4>
-      <ul>
-        {% for item in g.items %}
-        {% assign lastindex = forloop.length %}
-        {% if forloop.index > site.data.basic.config.count %} {% assign disp="display:none;" %} {% else %} {% assign disp="display:block;" %} {% endif %}
-        <li id="{{ gindex }}-{{ forloop.index }}" style = "{{ disp }}"> 
-        <div class="fullitem">
-          <div class="itemleft">
-          {{item.from }} {% if item.to %} - {{ item.to }}{% endif %}
-          </div>
+      <section id="#g{{ gindex }}" name="#g{{ gindex }}">
+      <div class="{{ ulclass }}">
+        <h4>{{ g.name }}</h4>
+        {% if g.name == "Publications" %}
+        {% assign lastindex = 1 %}
+        <div class="under-text">
+          <p><strong>h-index: </strong>{{ site.data.basic.metrics.hindex }}. <strong>Citations: </strong>{{
+            site.data.basic.metrics.citations }}. As of: {{ site.data.basic.metrics.date }}. <a
+              href="https://scholar.google.com/citations?user=Gw3sPAUAAAAJ&hl=en"><i
+                class="ai ai-google-scholar-square"></i>Profile</a></p>
+        </div>
+        <iframe
+          src="https://lup.lub.lu.se/search/publication?embed=1&limit=250&q=author+exact+ha8343al&sort=publicationstatus.desc&sort=year.desc"
+          width="100%" height="300" allowtransparency="true" frameborder="0">
+        </iframe>
 
-          <div class="itemright">
-          {% if item.primary or item.city or item.country %}
-          <div class="line">
-          <div class="lineleft"><strong>{{ item.primary }}. </strong>{% if item.city %}{{ item.city }}, {% endif %}{% if item.country %}{{ item.country }}{% endif %}</div>
-          </div>          
-          {% endif %}
-          {% if item.secondary or item.other %}
-          <div class="line">
-          <div class="lineleft">{% if item.secondary %}{{ item.secondary }}. {% endif %} <i>{{ item.other}}</i></div>
-          </div>
-          {% endif %}
-          {% if item.otherhidden %}
-          <div class="line">
-          <div class="lineleft"><i> "{{ item.otherhidden }}" </i></div>
-          </div>
-          {% endif %}
-        </div>
-        </div>
-        </li>
-        {% endfor%}
-      </ul>
-      {% if lastindex > site.data.basic.config.count %}
-        <a onclick="toggleDisplay('{{ gindex }}',{{ site.data.basic.config.count }}-1)" class="moreinfo" id="toggle-{{ gindex }}">Show More!</a>
-      {% endif %}
+        {% else %}
+        <ul>
+          {% for item in g.items %}
+          {% assign lastindex = forloop.length %}
+          {% if forloop.index > site.data.basic.config.count %} {% assign disp="display:none;" %} {% else %} {% assign
+          disp="display:block;" %} {% endif %}
+          <li id="{{ gindex }}-{{ forloop.index }}" style="{{ disp }}">
+            <div class="fullitem">
+              <div class="itemleft">
+                {{item.from }} {% if item.to %} - {{ item.to }}{% endif %}
+              </div>
+
+              <div class="itemright">
+                {% if item.primary or item.city or item.country %}
+                <div class="line">
+                  <div class="lineleft"><strong>{{ item.primary }}. </strong>{% if item.city %}{{ item.city }}, {% endif
+                    %}{% if item.country %}{{ item.country }}{% endif %}</div>
+                </div>
+                {% endif %}
+                {% if item.secondary or item.other %}
+                <div class="line">
+                  <div class="lineleft">{% if item.secondary %}{{ item.secondary }}. {% endif %} <i>{{ item.other}}</i>
+                  </div>
+                </div>
+                {% endif %}
+                {% if item.otherhidden %}
+                <div class="line">
+                  <div class="lineleft"><i> "{{ item.otherhidden }}" </i></div>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          </li>
+          {% endfor%}
+        </ul>
+        {% endif %}
+
+        {% if lastindex > site.data.basic.config.count %}
+        <a onclick="toggleDisplay('{{ gindex }}',{{ site.data.basic.config.count }}-1)" class="moreinfo  noprint"
+          id="toggle-{{ gindex }}">Show More!</a>
+        {% endif %}
       </div>
+    </section>
       {% endfor %}
-     
+
 
 
     </div>
-    
+
   </div>
-  </body>
+</body>
+
 </html>

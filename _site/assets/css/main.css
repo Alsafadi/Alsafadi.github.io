@@ -133,13 +133,34 @@
     width: 180px;
 }
 
-#profile {
+.profile {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    margin-bottom: 50px;
+    grid-template-columns: 2fr 1fr 6fr;
+    margin-bottom: 20px;
 }
 
-#basic-info {
+/*.profile-left {
+  display: grid;
+  grid-template-rows: auto auto fr;
+}
+
+.network {
+  display: grid;
+  grid-row: 2;
+}*/
+
+.socialicon {
+  font-size: 40px;
+  margin-bottom: 5px; 
+  color: black;
+}
+
+
+.profile_image {
+width: 180px;
+ }
+
+.basic-info {
 margin-top:auto;
 margin-bottom:auto;
 text-align: left;
@@ -245,7 +266,7 @@ ul {
 }
 
 .evenul{
-  background-color: #f2fafdc7;
+  background-color: #fbfeffc7;
   padding: 20px;
   border-radius: 20px;
   margin-bottom: 10px;
@@ -257,7 +278,9 @@ ul {
   margin-bottom: 10px;
 }
 
-
+.basic-item span:not(:last-child):after{
+  content: " ● ";
+}
 
 @media only screen and (max-width: 600px) {
  #profile {
@@ -300,4 +323,68 @@ grid-template-rows: auto auto auto fr;
   align-self: center;
 }
 
+}
+
+.list-inline-item{display:inline-block;}.list-inline-item:not(:last-child){margin-right:.5rem}
+.list-inline{padding-left:0;list-style:none}.list-inline-item{display:inline-block}.list-inline-item:not(:last-child){margin-right:.5rem}
+
+ul.social-buttons1 {
+  margin-bottom: 0;
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  bottom: 0;
+}
+
+.under-text {
+
+  text-align: left;
+margin-bottom: 20px;
+}
+
+@media print {
+  .noprint {
+     visibility: hidden;
+  }
+  .page-content {
+    position: relative;
+    background: #fff;
+    margin:0;
+    width: 900px;
+    padding: 50px;
+  }
+  
+  .page-content:after{
+    width: 90%;
+    height: 10px;
+    top: 30px;
+    right:8px;
+   
+  }
+  
+  .page-content:before{
+    width: 10px;
+    height: 95%;
+    top: 5px;
+    right:18px;
+    
+  }
+}
+
+.menubutton {
+  position: relative;
+  display: inline-block;
+}
+
+.menubutton:hover .menuitem {
+  display: block;
+}
+.menuitem {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
 }

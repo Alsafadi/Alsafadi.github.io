@@ -10,13 +10,30 @@ main:
       value: "Male"
     - item: "Marital Status"
       value: "Married"
-
   homeaddress: "Ragnvallagatan 16A LGH 1101, 256 63 Helsingborg, Sweden"
   workaddress: "Klinikgatan 26, 223 62 Lund, Sweden"
   cell: +46(0)768722033
   phone: +46(0)46 222 9671
   email: hani.alsafadi@med.lu.se
   img: /assets/img/alsafadi.png
+  links:
+  - url: https://orcid.org/0000-0002-1186-2517
+    icon: ai ai-orcid
+  - url: https://portal.research.lu.se/en/persons/hani-alsafadi
+    icon: fas fa-user-circle
+  - url: https://www.linkedin.com/in/hani-n-alsafadi-42757897/
+    icon: fab fa-linkedin-in
+  - url: https://twitter.com/Alsafadi_HN
+    icon: fab fa-twitter
+  - url: 
+    icon:
 
 config:
-    count: 5
+    count: 4
+
+metrics:
+  hindex: 10
+  citations: 500
+  date: 2021-Nov-10
+
+  
