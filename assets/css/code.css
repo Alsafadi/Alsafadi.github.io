@@ -3,8 +3,7 @@
 
 .dropdown{
   position: fixed;
-  display: inline-block;
-  right: 20%;
+  display: none;
 }
 
 .dropbtn {
@@ -52,4 +51,37 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #e7f4fac7;
+}
+
+
+
+
+.topmenu {
+  display: inline;
+  float: left;
+  width: 90%;
+}
+
+.topmenuitems {
+display: flex;
+overflow: hidden;
+overflow-x: scroll;
+scrollbar-width: none;
+outline: none;
+}
+
+.topmenuitem {
+  float: left;
+  padding: 3px;
+  margin: 2px;
+  width: auto;
+  background-color: lightsteelblue;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.arrowleft, .arrowright {
+  float: left;
+  width: 5%;
 }

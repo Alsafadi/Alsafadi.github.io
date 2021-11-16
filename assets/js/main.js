@@ -27,11 +27,14 @@ function navigate(X){
 $(window).scroll(function() {
 
     if ($(window).scrollTop() > 300) {
-        $("#dropdown").addClass('scrolled');
+        $("#dropdown").css("display", "inline-block");
     } else {
-        $("#dropdown").removeClass('scrolled');
+        $("#dropdown").css("display", "none");
     }
 });
+
+
+
 
 function printcv(X){
 var prtContent = document.getElementById(X);
