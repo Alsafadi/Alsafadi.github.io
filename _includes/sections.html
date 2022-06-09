@@ -1,0 +1,76 @@
+<div id="container">
+    {% for s in sections %}
+    {% assign sindex= forloop.index %}
+    {% assign value = forloop.index | modulo:2 %}
+    {% if value == 0 %} {% assign ulclass="evenul" %} {% else %} {% assign ulclass="oddul" %} {% endif %}
+    <section id="#s{{ sindex }}" name="#s{{ sindex }}">
+    <div class="{{ ulclass }}">
+    <h4> {{ s.name }}</h4>
+
+    <div class="entrydescription"> 
+    {% assign desc = site.description | where: "section", s.name %}
+    {{ desc }}
+    </div>
+
+      <ul>
+        {% assign entries = site.entries | where: "section", s.name %}
+
+        {% for item in entries %}
+          {% assign lastindex = forloop.length %}
+          {% assign lim = s.limit | plus: 0 %}
+          {% if forloop.index > lim %} {% assign disp="display:none;" %} {% else %} {% assign disp = "display:block;" %} {% endif %}
+          {% assign filename = item.url | replace_first: '/', '' | replace: 'entries/' , '' | replace: '_', '-'  | replace: '.html', '' %}
+
+          <li id="{{ sindex }}-{{ forloop.index }}" style="{{ disp }}">
+          <div class="fullentry" >
+            <a href="#e{{ filename }}" class="entrytitle closed" onclick="toggleEntry('{{ filename }}');">
+              <div class="arrowright"><i id="i{{ filename }}" class="fa-solid fa-circle-chevron-right"></i></div>
+              {{ item.title }}</a>
+              
+              <div class="entrycontent" id="c{{ filename }}" style="display:none;">
+                
+                <div class="entrydate">{% if item.edate %}<i class="fa-regular fa-calendar-days"></i> {{ item.edate }}{% endif %}</div>
+                
+                {{ item.content }}
+
+                <div class="entryclose" onclick="toggleEntry('{{ filename }}');"><i class="fa-solid fa-circle-xmark"></i> close!</div>
+              </div>
+            
+            
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% if s.name == "04. PUBLICATION" %}
+      {% assign lastindex = 1 %}
+      <div class="under-text">
+        <p><strong>h-index: </strong>{{ site.data.basic.metrics.hindex }}. <strong>Citations: </strong>{{
+          site.data.basic.metrics.citations }}. As of: {{ site.data.basic.metrics.date }}. <a
+            href="https://scholar.google.com/citations?user=Gw3sPAUAAAAJ&hl=en"><i
+              class="ai ai-google-scholar-square"></i>Profile</a></p>
+      </div>
+      <iframe
+        src="https://lup.lub.lu.se/search/publication?embed=1&limit=250&q=author+exact+ha8343al&sort=publicationstatus.desc&sort=year.desc"
+        width="100%" height="300" allowtransparency="true" frameborder="0">
+      </iframe>
+    {% endif %}
+
+
+      
+
+      {% if lastindex > lim %}
+      <a onclick="toggleDisplay('{{ sindex }}',{{ lim }}-1)" class="moreinfo  noprint"
+        id="toggle-{{ sindex }}">Show More!</a>
+      {% endif %}
+    </div>
+
+  </section>
+ 
+{% endfor %}
+    
+
+
+
+  </div>
+
+</div>

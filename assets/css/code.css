@@ -84,4 +84,6 @@ outline: none;
 .arrowleft, .arrowright {
   float: left;
   width: 5%;
+  margin-left: 5px;
 }
+

@@ -19,21 +19,25 @@ main:
   links:
   - url: https://orcid.org/0000-0002-1186-2517
     icon: ai ai-orcid
+    alt: Orcid
   - url: https://portal.research.lu.se/en/persons/hani-alsafadi
     icon: fas fa-user-circle
+    alt: "LU Research Portal"
   - url: https://www.linkedin.com/in/hani-n-alsafadi-42757897/
     icon: fab fa-linkedin-in
+    alt: LinkedIn
   - url: https://twitter.com/Alsafadi_HN
     icon: fab fa-twitter
+    alt: Twitter
   - url: 
     icon:
-
+    alt:
 config:
     count: 4
-
+    ecount: 10
 metrics:
   hindex: 10
-  citations: 500
-  date: 2021-Nov-10
+  citations: 642
+  date: 2022-06-09
 
   

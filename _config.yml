@@ -1,2 +1,18 @@
 theme: jekyll-theme-cayman
 
+url    : "https://alsafadi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+
+title      : Hani N. Alsafadi - CV and portfolio
+email      : hani.ns.safadi@gmail.com #this is also the email contact forms will go to
+description: "Personal Website!"
+author     : Hani N. Alsafadi
+
+analytics:
+  google: #Google Analytics tracking code here
+
+collections:
+  entries:
+  description:
+    
+markdown: kramdown

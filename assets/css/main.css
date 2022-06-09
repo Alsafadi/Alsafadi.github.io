@@ -140,20 +140,20 @@
     display: grid;
     grid-template-columns: 2fr 1fr 6fr;
     margin-bottom: 20px;
+    background-color: #f0f5ea;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 /*.profile-left {
   display: grid;
   grid-template-rows: auto auto fr;
 }
+*/
 
-.network {
-  display: grid;
-  grid-row: 2;
-}*/
 
 .socialicon {
-  font-size: 40px;
+  font-size: 45px;
   margin-bottom: 5px; 
   color: black;
 }
@@ -232,6 +232,7 @@ h4 {
     text-align: left;
     margin: 5px;
 }
+
 .fullitem:hover {
   background-color: #cdf0ff;
    
@@ -269,13 +270,13 @@ ul {
 }
 
 .evenul{
-  background-color: #fbfeffc7;
+  background-color: #f8faf5;
   padding: 20px;
   border-radius: 20px;
   margin-bottom: 10px;
 }
 .oddul{
-  background-color: #e7f4fac7;
+  background-color: #f0f5ea;
   padding: 20px;
   border-radius: 20px;
   margin-bottom: 10px;
@@ -374,3 +375,136 @@ margin-bottom: 20px;
   }
 }
 
+.entrycontent{
+  margin: 5%;
+  margin-top: 0;
+  width: 90%;
+}
+
+.entrycontent img{
+width: 100%;
+border-radius: 20px;
+
+}
+
+.entrytitle{
+  font-weight: bold;
+}
+
+.entrytitle a:hover{
+
+    text-decoration: none;
+  
+}
+.fullentry{
+  display: block;
+  text-align: left;
+  margin: 5px;
+
+  padding: 5px;
+  background-color: #d4dfc6;
+  border-radius: 20px;
+}
+.entryclose{
+  cursor: pointer;
+  background-color: #f0f5ea;
+  border-radius: 15px;
+  display: inline;
+  width: auto;
+  padding: 5px;
+  text-align:right;
+}
+.topmenu1 {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.topmenuitems1 {
+width: 100%;
+display: inline-block;
+overflow: hidden;
+align-items: center;
+text-align: justify;
+
+}
+.menuitem {
+  display: block;
+  height: 120px;
+  width: auto;
+  float: left;
+}
+.menunumber{
+display: inline-block;
+position: relative;
+background-color: rgb(140, 163, 101);
+text-align: center;
+cursor: pointer;
+width: 50px;
+height: 50px;
+border-radius: 25px;
+font-size: 25px;
+margin: 5px;
+padding-top: 5px;
+}
+
+.topmenuitem1 {
+  display: none;
+}
+
+.menuitem:hover .menunumber {
+  background-color:rgb(240, 240, 240);
+}
+.menuitem:hover .topmenuitem1{
+display: block;
+position: absolute;
+left:0;
+right: 0;
+width: auto;
+margin-top: 65px;
+text-align: center;
+padding: 10px;
+padding-left: 20px;
+padding-right: 20px;
+overflow-wrap: anywhere;
+margin: 2px;
+background-color: rgb(240, 240, 240);
+cursor: pointer;
+z-index: 1;
+}
+
+.entrydescription {
+  text-align: left;
+  margin-top: 10px;
+}
+
+a {
+color: darkolivegreen
+}
+a:hover {
+  color: rgb(48, 65, 18);
+  text-decoration: none;
+  }
+.entrydate{
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: darkolivegreen;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}

@@ -1,0 +1,43 @@
+<div class="profile">
+    <div class="profile_image">
+      <img class="rounded-circle" src="{{ site.data.basic.main.img }}" alt="">
+    </div>
+
+    <div class="network noprint">
+      <ul>
+        {% for network in site.data.basic.main.links %}
+        {%- if network.url -%}
+        <li>
+          <a href="{{ network.url }}" target="_blank" data-toggle="tooltip" title="{{ network.alt }}">
+            <i class="{{ network.icon }} socialicon"></i>
+          </a>
+        </li>
+        {%- endif -%}
+        {% endfor %}
+      </ul>
+    </div>
+
+  <div class="basic-info">
+    <ul>
+      {% if site.data.basic.main.name %}
+      <li class="name">{{ site.data.basic.main.name }}</li>
+      {% endif %}
+      {% if site.data.basic.main.demographics %}
+      <li class="basic-item">
+        {% for i in site.data.basic.main.demographics %}
+        <span>{{ i.value }}</span>
+        {% endfor %}
+      </li>
+      {% endif %}
+      {% if site.data.basic.main.homeaddress %}
+      <li>{{ site.data.basic.main.homeaddress }}</li>
+      {% endif %}
+      {% if site.data.basic.main.workaddress %}
+      <li>{{ site.data.basic.main.workaddress }}</li>
+      {% endif %}
+      <li> {{ site.data.basic.main.cell }} ● {{ site.data.basic.main.phone }}
+      </li>
+      <li>{{ site.data.basic.main.email }}</li>
+    </ul>
+  </div>
+</div>

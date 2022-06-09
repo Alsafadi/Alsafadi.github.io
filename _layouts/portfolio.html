@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body id="page-top">
+  <button id="myBtn" onclick="topFunction()"  title="Go to top">Top <i class="fa-solid fa-turn-up"></i></button>
+  <div class="page-content">  
+  {% include basicinfo.html %}
+<!-- <div class="noprint" onclick="print()">Print this cv</div> -->
+{% capture my_include %}{% include intro.md %}{% endcapture %}
+{{ my_include | markdownify }}
+<div id="topmenu1">
+    <div class="topmenuitems1">
+      {% assign sections = site.data.portfoliosections %}
+      {% for s in sections %}
+      <div class="menuitem" onclick="navigate('#s{{ forloop.index }}')">
+        
+        <a class="menunumber">{{ forloop.index }}</a>
+        
+        <div class = "topmenuitem1" onclick="navigate('#s{{ forloop.index }}')">{{ s.name }}</div>
+      
+      </div>
+      {% endfor %}
+    </div>
+</div>
+
+
+{% include sections.html %}
+
+</body>
+
+</html>
