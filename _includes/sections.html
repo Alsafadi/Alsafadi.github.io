@@ -13,12 +13,15 @@
     </div>
 
       <ul>
-        {% assign entries = site.entries | where: "section", s.name %}
+        {% assign entries = site.entries | where: "section", s.name | where_exp: "entries", "entries.title !=nil" %}
 
         {% for item in entries %}
+        
+
           {% assign lastindex = forloop.length %}
           {% assign lim = s.limit | plus: 0 %}
           {% if forloop.index > lim %} {% assign disp="display:none;" %} {% else %} {% assign disp = "display:block;" %} {% endif %}
+
           {% assign filename = item.url | replace_first: '/', '' | replace: 'entries/' , '' | replace: '_', '-'  | replace: '.html', '' %}
 
           <li id="{{ sindex }}-{{ forloop.index }}" style="{{ disp }}">

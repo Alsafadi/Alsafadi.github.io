@@ -258,7 +258,7 @@ ul {
 
 .moreinfo {
   cursor: pointer;
-  background-color: #cdf0ff;
+  background-color: #d9ab43;
   padding: 5px;
   border-radius: 20px;
   display: block;
@@ -287,10 +287,53 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
- #profile {
+  body{
+    margin: 0;
+  }
+ .profile {
     display: block;
     margin-bottom: 50px;
     text-align: center;
+    align-content: center;
+
+}
+.network ul {
+  margin-top: 20px;
+ display: inline-block;
+}
+
+.network li {
+  float: left;
+  margin: 5px;
+}
+.basic-info ul {
+  text-align: center;
+}
+.menuitem{
+  display: block;
+}
+.menunumber {
+  display: none;
+}
+.topmenuitem1{
+  display: block;
+  width: auto;
+  text-align: center;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-wrap: anywhere;
+  margin: 2px;
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+.topmenuitems1{
+  padding-left: 0;
+}
+
+
+.profile_image{
+  display: contents;
 }
 .page-content{
   width: 100%;
@@ -314,7 +357,7 @@ grid-template-rows: auto auto auto fr;
   content:"";
   display: block;
   margin: auto;
-  border-bottom: 3px dotted #aae2fcc7;
+  border-bottom: 3px dotted #fce1aac7;
   width: 100%;
   align-self: center;
 }
@@ -322,7 +365,7 @@ grid-template-rows: auto auto auto fr;
   content:"";
   display: block;
   margin: auto;
-  border-bottom: 3px dotted #b7e6f7c7;
+  border-bottom: 3px dotted #fce1aac7;
   width: 100%;
   align-self: center;
 }
@@ -423,9 +466,8 @@ border-radius: 20px;
 width: 100%;
 display: inline-block;
 overflow: hidden;
-align-items: center;
-text-align: justify;
-
+align-content: space-between;
+padding-left: 40px;
 }
 .menuitem {
   display: block;
@@ -436,7 +478,7 @@ text-align: justify;
 .menunumber{
 display: inline-block;
 position: relative;
-background-color: rgb(140, 163, 101);
+background-color: #d9ab43;
 text-align: center;
 cursor: pointer;
 width: 50px;
@@ -507,4 +549,8 @@ a:hover {
 
 #myBtn:hover {
   background-color: #555;
+}
+
+#container h4{
+  border-bottom: 1px solid #d9ab43;
 }
