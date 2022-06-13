@@ -26,7 +26,7 @@
 
           <li id="{{ sindex }}-{{ forloop.index }}" style="{{ disp }}">
           <div class="fullentry" >
-            <a href="#e{{ filename }}" class="entrytitle closed" onclick="toggleEntry('{{ filename }}');">
+            <a id="l{{ filename }}" href="#e{{ filename }}" class="entrytitle closed" onclick="toggleEntry('{{ filename }}');">
               <div class="arrowright"><i id="i{{ filename }}" class="fa-solid fa-circle-chevron-right"></i></div>
               {{ item.title }}</a>
               
@@ -36,7 +36,7 @@
                 
                 {{ item.content }}
 
-                <div class="entryclose" onclick="toggleEntry('{{ filename }}');"><i class="fa-solid fa-circle-xmark"></i> close!</div>
+                <div class="entryclose noprint" onclick="toggleEntry('{{ filename }}');"><i class="fa-solid fa-circle-xmark"></i> close!</div>
               </div>
             
             

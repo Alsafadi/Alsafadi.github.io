@@ -53,13 +53,17 @@ function toggleEntry(z){
     
     if(window.getComputedStyle(d).display=="block") {
         document.getElementById("c"+z).style.display = "none";
+       // document.getElementById("l"+z).style.marginTop = "0";
         const iid = "i"+z
         document.getElementById(iid).className = "fa-solid fa-circle-chevron-right";
     
     }else{
+
         document.getElementById("c"+z).style.display = "block";
+        //document.getElementById("l"+z).style.marginTop = "1rem";
         const iid = "i"+z
         document.getElementById(iid).className = "fa-solid fa-circle-chevron-down";
+    
     }
     }
     

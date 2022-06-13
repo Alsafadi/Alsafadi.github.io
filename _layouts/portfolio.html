@@ -7,18 +7,18 @@
   <button id="myBtn" onclick="topFunction()"  title="Go to top">Top <i class="fa-solid fa-turn-up"></i></button>
   <div class="page-content">  
   {% include basicinfo.html %}
-<!-- <div class="noprint" onclick="print()">Print this cv</div> -->
+<div class="printportfolio noprint" onclick="print()">Print Portfolio</div>
 {% capture my_include %}{% include intro.md %}{% endcapture %}
 {{ my_include | markdownify }}
-<div id="topmenu1">
-    <div class="topmenuitems1">
+<div id="topmenu1 noprint">
+    <div class="topmenuitems1 noprint">
       {% assign sections = site.data.portfoliosections %}
       {% for s in sections %}
-      <div class="menuitem" onclick="navigate('#s{{ forloop.index }}')">
+      <div class="menuitem noprint" onclick="navigate('#s{{ forloop.index }}')">
         
-        <a class="menunumber">{{ forloop.index }}</a>
+        <a class="menunumber noprint">{{ forloop.index }}</a>
         
-        <div class = "topmenuitem1" onclick="navigate('#s{{ forloop.index }}')">{{ s.name }}</div>
+        <div class = "topmenuitem1 noprint" onclick="navigate('#s{{ forloop.index }}')">{{ s.name }}</div>
       
       </div>
       {% endfor %}
