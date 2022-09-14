@@ -5,6 +5,6 @@ I was born and raised in Gaza, Palestine. I left home at the age of 17 to pursue
 
 ### About the portfolio
 
-This portfolio is a form of documentation of the fullfilment of the learning outcomes of the PhD. It covers various reflections in all the different aspects of the PhD. The portfolio is intented to promote and enhance reflection on the different outcomes of the PhD degree. The learning outcomes of the PhD are categorized in 12 categories; each entry in these sections below represents either a reflection on the learning outcomes or a documentation of a specific event/activity pertaining to the PhD. The entries are not ordered chronologically, however, they are ordered in a sequence that suites the content.
+This portfolio is a form of documentation of the fulfillment of the learning outcomes of the PhD. It covers various reflections in all the different aspects of the PhD. The portfolio is intended to promote and enhance reflection on the different outcomes of the PhD degree. The learning outcomes of the PhD are categorized in 12 categories; each entry in these sections below represents either a reflection on the learning outcomes or a documentation of a specific event/activity pertaining to the PhD. The entries are not ordered chronologically, however, they are ordered in a sequence that suites the content.
 
 I hope that by reading this portfolio, you will have an insight into my journey through the PhD.

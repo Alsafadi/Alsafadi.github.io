@@ -27,7 +27,7 @@ function navigate(X){
 $(window).scroll(function() {
 
     if ($(window).scrollTop() > 300) {
-        $("#dropdown").css("display", "inline-block");
+        $("#dropdown").css("display", "block");
     } else {
         $("#dropdown").css("display", "none");
     }

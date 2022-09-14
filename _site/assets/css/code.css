@@ -3,6 +3,7 @@
 
 .dropdown{
   position: fixed;
+  margin-left: 95%;
   display: none;
 }
 

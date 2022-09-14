@@ -7,9 +7,13 @@
   <button id="myBtn" onclick="topFunction()"  title="Go to top">Top <i class="fa-solid fa-turn-up"></i></button>
   <div class="page-content">  
   {% include basicinfo.html %}
+
+
 <div class="printportfolio noprint" onclick="print()">Print Portfolio</div>
+
 {% capture my_include %}{% include intro.md %}{% endcapture %}
 {{ my_include | markdownify }}
+
 <div id="topmenu1 noprint">
     <div class="topmenuitems1 noprint">
       {% assign sections = site.data.portfoliosections %}
