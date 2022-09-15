@@ -447,6 +447,7 @@ border-radius: 20px;
   padding: 5px;
   background-color: #d4dfc6;
   border-radius: 20px;
+  page-break-inside: avoid;
 }
 .entryclose{
   cursor: pointer;

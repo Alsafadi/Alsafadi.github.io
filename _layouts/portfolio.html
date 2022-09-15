@@ -9,7 +9,7 @@
   {% include basicinfo.html %}
 
 
-<div class="printportfolio noprint" onclick="print()">Print Portfolio</div>
+<div class="printportfolio noprint" onclick="openAndPrint()">Print Portfolio</div>
 
 {% capture my_include %}{% include intro.md %}{% endcapture %}
 {{ my_include | markdownify }}

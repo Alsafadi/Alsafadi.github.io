@@ -88,12 +88,12 @@ function toggleEntry(z){
 
     function openAndPrint(){
 
-        let ids = [...document.querySelectorAll('[id^="l"]')].map(item => item.id);
+        let ids = [...document.querySelectorAll('[id^="c"]')].map(item => item.id);
         ids.forEach(tog);
-        console.log(ids);
+        
         function tog(value, index){
-
+            console.log(value);
         document.getElementById(value).style.display = "block";
-    }
-    Window.print();
+        }
+    print();
     }
