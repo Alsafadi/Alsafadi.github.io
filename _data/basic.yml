@@ -36,8 +36,8 @@ config:
     count: 4
     ecount: 10
 metrics:
-  hindex: 10
-  citations: 642
-  date: 2022-06-09
+  hindex: 11
+  citations: 726
+  date: 2022-09-15
 
   

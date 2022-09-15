@@ -489,20 +489,6 @@ margin: 5px;
 padding-top: 5px;
 }
 
-.menunumber2{
-  display: inline-block;
-  position: relative;
-  background-color: #d9ab43;
-  text-align: center;
-  cursor: pointer;
-  width: 45px;
-  height: 45px;
-  border-radius: 25px;
-  font-size: 25px;
-  margin: 5px;
-  padding-top: 5px;
-  }
-
 .topmenuitem1 {
   display: none;
 }

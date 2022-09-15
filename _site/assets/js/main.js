@@ -84,3 +84,16 @@ function toggleEntry(z){
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
+
+    function openAndPrint(){
+
+        let ids = [...document.querySelectorAll('[id^="l"]')].map(item => item.id);
+        ids.forEach(tog);
+        console.log(ids);
+        function tog(value, index){
+
+        document.getElementById(value).style.display = "block";
+    }
+    Window.print();
+    }
