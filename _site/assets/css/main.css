@@ -312,9 +312,7 @@ ul {
 .menuitem{
   display: block;
 }
-.menunumber {
-  display: none;
-}
+
 .topmenuitem1{
   display: block;
   width: auto;
@@ -447,7 +445,6 @@ border-radius: 20px;
   padding: 5px;
   background-color: #d4dfc6;
   border-radius: 20px;
-  page-break-inside: avoid;
 }
 .entryclose{
   cursor: pointer;
@@ -476,7 +473,7 @@ padding-left: 40px;
   width: auto;
   float: left;
 }
-.menunumber{
+.menunumber {
 display: inline-block;
 position: relative;
 background-color: #d9ab43;
@@ -490,11 +487,25 @@ margin: 5px;
 padding-top: 5px;
 }
 
+.menunumber2 {
+  display: inline-block;
+  position: relative;
+  background-color: #d9ab43;
+  text-align: center;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  font-size: 25px;
+  margin: 5px;
+  padding-top: 5px;
+  }
+
 .topmenuitem1 {
   display: none;
 }
 
-.menuitem:hover .menunumber {
+.menuitem:hover .menunumber .menunumber2 {
   background-color:rgb(240, 240, 240);
 }
 .menuitem:hover .topmenuitem1{
