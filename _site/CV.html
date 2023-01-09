@@ -731,16 +731,18 @@
       <div class="evenul">
         <h4>Publications</h4>
         
-        
-        <div class="under-text">
-          <p><strong>h-index: </strong>11. <strong>Citations: </strong>726. As of: 2022-09-15. <a
-              href="https://scholar.google.com/citations?user=Gw3sPAUAAAAJ&hl=en"><i
-                class="ai ai-google-scholar-square"></i>Profile</a></p>
-        </div>
-        <iframe
-          src="https://lup.lub.lu.se/search/publication?embed=1&limit=250&q=author+exact+ha8343al&sort=publicationstatus.desc&sort=year.desc"
-          width="100%" height="300" allowtransparency="true" frameborder="0">
-        </iframe>
+            
+            <div class="under-text">
+              <p><strong>h-index: </strong>11. <strong>Citations: </strong>726. As of: 2022-09-15. <a
+                  href="https://scholar.google.com/citations?user=Gw3sPAUAAAAJ&hl=en"><i
+                    class="ai ai-google-scholar-square"></i>Profile</a></p>
+            <table id="h-index"></table>
+            
+            </div>
+            <iframe
+              src="https://lup.lub.lu.se/search/publication?embed=1&limit=250&q=author+exact+ha8343al&sort=publicationstatus.desc&sort=year.desc"
+              width="100%" height="300" allowtransparency="true" frameborder="0">
+            </iframe>
 
         
 
@@ -2090,5 +2092,7 @@
 
   </div>
 </body>
-
+<script>
+    $('#h-index').load('https://scholar.google.com/citations?user=Gw3sPAUAAAAJ&hl=en #gsc_rsb_st')
+</script>
 </html>

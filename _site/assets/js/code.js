@@ -29,7 +29,3 @@ updateMeter();
       document.body.appendChild(canvas)
   });
   }
-
-  function updatetext(){
-  
-  }

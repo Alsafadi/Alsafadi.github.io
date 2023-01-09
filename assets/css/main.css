@@ -335,7 +335,8 @@ ul {
 }
 .page-content{
   width: 100%;
-  scale: 80%;
+  transform: scale(0.95);
+  transform-origin: top;
   padding: 5%;
 }
 
