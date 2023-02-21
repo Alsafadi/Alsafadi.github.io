@@ -1,0 +1,9 @@
+<div class="dropdown" id="dropdown">
+    <button class="dropbtn"><i class="fas fa-bars"></i></button>
+    <div class="dropdown-content">
+        {% assign groups = site.data.content | group_by: "Section" %}
+        {% for g in groups %}
+        <p onclick="navigate('#g{{ forloop.index }}')">{{ g.name }}</p>
+        {% endfor %}
+    </div>
+</div>

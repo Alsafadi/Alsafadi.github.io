@@ -1,43 +1,38 @@
 main:
-  title: "CV - Hani N. Alsafadi"
-  name: "Hani N. Alsafadi"
+  title: CV - Hani N. Alsafadi
+  name: Hani N. Alsafadi
   demographics:
-    - item: "Personnummer"
-      value: "19910317-7110"
-    - item: "Nationality"
-      value: "Palestinian"
-    - item: "Gender"
-      value: "Male"
-    - item: "Marital Status"
-      value: "Married"
-  homeaddress: "Revärgatan 5 LGH 1002, 254 61 Helsingborg, Sweden"
-  workaddress: "Klinikgatan 26, 223 62 Lund, Sweden"
+    - item: Personnummer
+      value: 19910317-7110
+    - item: Nationality
+      value: Palestinian
+    - item: Gender
+      value: Male
+    - item: Marital Status
+      value: Married
+  homeaddress: 'Revärgatan 5 LGH 1002, 254 61 Helsingborg, Sweden'
+  workaddress: 'Klinikgatan 26, 223 62 Lund, Sweden'
   cell: +46(0)768722033
   phone: +46(0)46 222 9671
   email: hani.alsafadi@med.lu.se
   img: /assets/img/alsafadi.png
   links:
-  - url: https://orcid.org/0000-0002-1186-2517
-    icon: ai ai-orcid
-    alt: Orcid
-  - url: https://portal.research.lu.se/en/persons/hani-alsafadi
-    icon: fas fa-user-circle
-    alt: "LU Research Portal"
-  - url: https://www.linkedin.com/in/hani-n-alsafadi-42757897/
-    icon: fab fa-linkedin-in
-    alt: LinkedIn
-  - url: https://twitter.com/Alsafadi_HN
-    icon: fab fa-twitter
-    alt: Twitter
-  - url: 
-    icon:
-    alt:
+    - url: 'https://orcid.org/0000-0002-1186-2517'
+      icon: ai ai-orcid
+      alt: Orcid
+    - url: 'https://portal.research.lu.se/en/persons/hani-alsafadi'
+      icon: fas fa-user-circle
+      alt: LU Research Portal
+    - url: 'https://www.linkedin.com/in/hanialsafadi/'
+      icon: fab fa-linkedin-in
+      alt: LinkedIn
+    - url: 'https://twitter.com/Alsafadi_HN'
+      icon: fab fa-twitter
+      alt: Twitter
 config:
-    count: 4
-    ecount: 10
+  count: 4
+  ecount: 10
 metrics:
   hindex: 11
-  citations: 726
-  date: 2022-09-15
-
-  
+  citations: 862
+  date: '2023-02-20'

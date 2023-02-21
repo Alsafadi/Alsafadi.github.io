@@ -1,69 +1,86 @@
-section,display,itemid,from,to,primary,secondary,city,country,other,otherhidden
-Eduction,yes,1,08.2018,Current,Lund University,Ph.D. in Biomedicine,Lund,Sweden,(Half-time passed: 2020.10.28),
-Eduction,yes,2,09.2016,11.2017,Comprehensive Pneumology Center (CPC),Graduate Research School,Munich,Germany,,
-Eduction,yes,3,08.201,05.2014,Earlham College,B.A. Biochemistry,"Richmond, IN",USA,,
-Eduction,yes,4,08.2008,05.2010,United World College of the Adriatic, International Baccalaureate,"Duino Aurisina, Trieste",Italy,,
-"Grants, Awards and Honors",yes,1,2021,,Vermont Stem Cell Conference, Outstanding Abstract Achievement Award,"Burlington, VA",USA,(Virtual Event),
-"Grants, Awards and Honors",yes,2,2020,,Wallenberg Center for Molecular Medice (WCMM) Research Day,Best elevator pitch,Lund,Sweden,,
-"Grants, Awards and Honors",yes,3,2019,,Vermont Stem Cell Conference,Best Poster,"Burlington, VA",USA,,
-"Grants, Awards and Honors",yes,4,2019,,Wallenberg Center for Molecular Medice (WCMM) Research Day,Best poster,Lund,Sweden,,
-"Grants, Awards and Honors",yes,5,2018,,The Physiographic Society of Lund,Travel grant,Lund,Sweden,(16.000 SEK),
-"Grants, Awards and Honors",yes,6,2017,,CPC Graduate Research School,Research Grant,Munich,Germany, (10.000 EUR; 100.000 SEK),
-"Grants, Awards and Honors",yes,7,2010,2014,Davis United World College Scholarship,,"Richmond, IN",USA,,
-"Grants, Awards and Honors",yes,8,2008,2010,United World College of the Adriatic (UWCAD) Scholarship,,Duino Aurisina ,Italy, (20.000 EUR/year),
-Select Research Experience,yes,1,08.2018,Present,Lund University,"Experimental Medical Sciences, Lung bioengineering and regeneration",Lund,Sweden,Doctoral Candidate,Context dependence of Hippo pathway in idiopatic pulmonary fibrosis
-Select Research Experience,yes,2,12.2017,08.2018,Lund University,"Experimental Medical Sciences, Lung bioengineering and regeneration",Lund,Sweden,Research fellow,Exploration of the extracellular matrix role in idiopatic pulmonary fibrosis and utilization/optimization of ex vivo  chronic lung disease models.
-Select Research Experience,yes,3,11.2015,11.2017,Helmholtz Zentrum Munchen,Comprehensive Pneumology Center,Munich,Germany,Research Associate,Development of an ex vivo human model of idiopathic pulmonary fibrosis through the use of human precision-cut lung slices (PCLS)
-Select Research Experience,yes,4,08.2017,10.2017,Lund University,"Experimental Medical Sciences, Lung biology group",Lund,Sweden,Research internship,The role of glycosaminoglycans (GAGs) in epithelial to mesenchymal transition (EMT)
-Select Research Experience,yes,5,02.2017,03.2017,Ludwig Maximilian University,Gene Center,Lund,Sweden,Research internship,X-ray crystallography and cryo-EM structure determination
-Select Research Experience,yes,6,12.2014,08.2015,Northwestern University,Pulmonary and Critical Care Department,"Chicago, IL",USA,Research Assistant,The effect of hypercapnia on immune response of THP-1 macrophages 
-Publications,yes,1,,,,,,,,
-Research Supervision,yes,1,Current,,Inés Míngues Sant,,,Spain,Bachelor Thesis,
-Research Supervision,yes,2,2021,,Pieter Plattiau ,,,Balgium,Bachelor Thesis,
-Research Supervision,yes,3,2021,,Pablo Ovejero ,,,Spain,Bachelor Thesis,
-Research Supervision,yes,4,2021,,Laura Martinez ,,,Spain,Bachelor Thesis,
-Research Supervision,yes,5,2021,,MeiFeng Yu ,,,Canada,Bachelor Thesis,
-Research Supervision,yes,6,2020,,Thomas Syski ,,,Sweden,Master Thesis,
-Research Supervision,yes,7,2019,,Eliora Sy Wee ,,,Canada,Bachelor Thesis,
-Selected Technical Trainees,,,2021,,Roberta Battistella,PhD Student,,,qPCR,
-Selected Technical Trainees,,,2021,,Linda Decker,Master Student,,,qPCR,
-Selected Technical Trainees,,,2020,,Emil Rehnberg,Master Student,,,"qPCR, Lyophilization",
-Selected Technical Trainees,,,2020,,Caroline Periera,PhD Student,,,"Precision Cut Lung Slices, Immunoblotting, qPCR, wholemount immunofluorescence.",
-Selected Technical Trainees,,,2019,,Eliora Sy Wee ,Bachelor Student,,,"Immunoblotting, qPCR, immunofluorescence",
-Selected Technical Trainees,,,2019,,Anna NirooMand,Medical Student,,,qPCR,
-Selected Technical Trainees,,,2019,,Martina De Santis,PhD student ,,,3D (Bio)printing,
-Selected Technical Trainees,,,2019,,Sinem Tas,Post Doc,,,3D (Bio)prinitng,
-Selected Technical Trainees,,,2018,,John Stegmayr,Post Doc,,,Precision Cut Lung Slices,
-Selected Technical Trainees,,,2018,,Margarita Mittendorfer,Bachelor Student,,,Hydroxyproline Assay,
-Selected Technical Trainees,,,2017,,Michael Gerckens,Medical Students,,,Precision Cut Lung Slices,
-Selected Technical Trainees,,,2017,,Arunima Seal,PhD Student,,,Precision Cut Lung Slices,
-Invited talks,yes,1,2020,,Linköping Universit,,Linköpin,Sweden,,Role of Hippo signaling and Yap/Taz in the Lung Epithelium during Fibrosis
-Invited talks,yes,2,2018,,Lund University,,Lund,Sweden,,A deranged Yap/Taz axis in lung epithelial progenitor cells leads to increased extracellular matrix remodeling through lysyl oxidase in idiopathic pulmonary fibrosis
-Invited talks,yes,3,2018,,Nottigham University - Lund University,PCLS symposium,Lund,Sweden,,Drug Evaluation using ex vivo diseas models developed in PCLS - Magnifying on Fibros
-Invited talks,yes,4,2017,,University of Colorado,,"Denver, CO",USA,,A novel ex vivo model to induce early fibrosis-like changes in human precision-cut lung slices
-Invited talks,yes,5,2017,,American Thoracic Society (ATS) conference,,"Washington, DC",USA,,Ex Vivo 3D Lung Tissues 101
-Select Conference Abstracts,yes,,2021,,European Respiratory Sociecty (ERS) Congress ,,Virtual,,Poster Presentation. Published,3D printing aids simultaneous isolation of proximal and distal lung epithelial progenitors from individual mice
-Select Conference Abstracts,yes,,2021,,Vermont Stem Cell Confernce (2021) ,,Virtual,,Oral Presentation (Outstanding Abstract Achievement Award),Dual Isolation of Proximal and Distal Lung Epithelial Progenitor Cells and Their Distribution in Intact Murine Lungs Visualized Using Light Sheet Microscopy
-Select Conference Abstracts,yes,,2021,,ERS Lung Science Confrence,,Virtual,,Poster Presentation,3D printing aids simultaneous isolation of proximal and distal lung epithelial progenitors from individual mice
-Select Conference Abstracts,yes,,2019,,Vermont Stem Cell Conference,,Virtual,,Poster Presentation (Best Poster Award),Derangement of alveolar type II progenitor cells contribute to extracellular matrix deposition
-Contributions to conferences,,,2021,,Lung Science Conference (LSC),,Virtual,,Session Chair,
-Contributions to conferences,,,2019,,Vermont Stem Cell Conference,Workshop Organizer,"Burlington, VA",USA,,
-Contributions to conferences,,,2019,,European Respiratory Society (ERS) Congress,Abstract Reviewer,Madrid,Spain,,
-Contributions to conferences,,,2018,,Lund Respiratory Network (LURN) “The Aging Lun,Session Chair,Ystad,Sweden,,
-Contributions to conferences,,,2018,,European Respiratory Society (ERS) Congress,Abstract Reviewer,Paris,France,,
-Contributions to conferences,,,2018,,Lung Science Conference (LSC),Session Chair,Estoril,Portugal,,
-Select Leadership Roles,,,Current,,Lund University's Academic Appoint Board,,,,,
-Select Leadership Roles,,,2020,2021,Co-organized the Swedish Bioinformatics Workshop 2021,,,,,
-Select Leadership Roles,,,2019,,Selected to reprecent the WCMM center at strategic meeting the KAW foundation and Wallenberg family representatives.,,,,,
-Select Leadership Roles,,,2019,,Co-organized Lund University Stem Cell Center Retreat,,Ystad,Sweden,,
-Select Leadership Roles,,,2019,,Organizer of WCMM research school 1st Retreat,,Barsebäc,Sweden,,
-Select Leadership Roles,,,2018,2019,Elected WCMM Research School Trainee Representative,,,,,
-Select Leadership Roles,,,2018,,Organized Symposium on Precision Cut Lung Slice in collaboration with Nottingham University,,,,,
-Professional Certificates ,,,2019,,SciLife Labs and NBIS, Omics Integration and Systems Biology,Stockholm,Sweden,,
-Professional Certificates ,,,2018,,RaukR 2018. Advanced R programming for Bioinformatics Summer School,,"Visby, Götlan",Sweden,,
-Community Service/Outreach Activity,,,2019,,Appeared on Swedish TV_SVT: Vetenskapens värld – Organ på,,,,,
-Community Service/Outreach Activity,,,2019,,NMT days - WCMM research school outreach presentation, Organ 3D printing,,,,
-Languages,,,Native like,,English,,,,,
-Languages,,,Native,,Arabic,,,,,
-Languages,,,Proficient,,Italian,,,,,
-Languages,,,Beginner,,Swedish,,,,,
+Section,Type,printable,itemid,from,to,primary,secondary,city,country,other,otherhidden
+Eduction,all,print,1,08.2018,02.2023,Lund University,Ph.D. in Biomedicine,Lund,Sweden,"""Thesis title: Role of the co-transcriptional regulators Yap/Taz in the normal and fibrotic lung epithelia""",
+Eduction,all,print,2,09.2016,11.2017,Comprehensive Pneumology Center (CPC),Graduate Research School,Munich,Germany,,
+Eduction,all,print,3,08.2010,05.2014,Earlham College,B.A. Biochemistry,"Richmond, IN",USA,,
+Eduction,all,print,4,08.2008,05.2010,United World College of the Adriatic, International Baccalaureate,"Duino Aurisina, Trieste",Italy,,
+"Grants, Awards and Honors",all,print,1,2021,,The Physiographic Society of Lund Research Grant,Research Grant,Lund,Sweden,(50.000 SEK),
+"Grants, Awards and Honors",all,print,2,2017,,CPC Graduate Research School,Research Grant,Munich,Germany,(10.000 EUR; 100.000 SEK),
+"Grants, Awards and Honors",all,hideit,3,2010,2014,Davis United World College Scholarship,Scholarship,"Richmond, IN",USA,( Full Scholarship. Approximately $50K/Year for 4 years).,
+"Grants, Awards and Honors",all,hideit,4,2008,2010,United World College of the Adriatic (UWCAD) Scholarship,Scholarship,Duino Aurisina ,Italy, (20.000 EUR/year),
+"Grants, Awards and Honors",all,print,5,2018,,The Physiographic Society of Lund,Travel grant,Lund,Sweden,(16.000 SEK),
+"Grants, Awards and Honors",all,print,6,2021,,Vermont Stem Cell Conference,Outstanding Abstract Achievement Award,"Burlington, VA",USA,(Virtual Event),
+"Grants, Awards and Honors",all,print,7,2020,,Wallenberg Center for Molecular Medice (WCMM) Research Day,Best elevator pitch,Lund,Sweden,,
+"Grants, Awards and Honors",all,print,8,2019,,Vermont Stem Cell Conference,Best Poster,"Burlington, VA",USA,,
+"Grants, Awards and Honors",all,hideit,9,2019,,Wallenberg Center for Molecular Medice (WCMM) Research Day,Best poster,Lund,Sweden,,
+Select Bioinformatics Skills,,print,,,,R / Rstudio,Statistics; Omics analysis and Intergration; RNAseq; Single cell RNASeq; Data visualization using ggplot2 and plotly,,,,
+Select Bioinformatics Skills,,print,,,,Python,Genomic analysis tools; Singel Cell RNAseq; Data visualization with matplotlib and seaborn,,,,
+Select Bioinformatics Skills,,print,,,,Bash/Unix,File manipulation and management,,,,
+Select Bioinformatics Skills,,print,,,,IJMacro,Macro construction for automated image analysis,,,,
+Select Bioinformatics Skills,,hideit,,,,Javascript,Web devolopmebt,,,,
+Select Bioinformatics Skills,,hideit,,,,Groovy&Grails,Web application development and intergration with SQL,,,,
+Select Bioinformatics Skills,,hideit,,,,Angular/ionic,Web application development,,,,
+Select Bioinformatics Skills,,hideit,,,,Jekyll Liquid,Static webpage development,,,,
+Select Research Skills,,print,,,,3D culture models,"PCLS, Lung organoids",,,,
+Select Research Skills,,print,,,,Advanced Microcopy techniques,"Lightsheet microscopy, Confocal microscopy, SEM",,,,
+Select Research Skills,,print,,,,Primary cell isolation,Human and murine distal and proximal lung epithelial cells,,,,
+Select Research Skills,,print,,,,Development of in vitro assays,In vitro assay for studying matrix remodelling,,,,
+Select Research Experience,res,print,1,08.2018,02.2023,Lund University,"Experimental Medical Sciences, Lung bioengineering and regeneration",Lund,Sweden,Doctoral Candidate,Role of the co-transcriptional regulators Yap/Taz in the normal and fibrotic lung epithelia
+Select Research Experience,res,print,2,12.2017,08.2018,Lund University,"Experimental Medical Sciences, Lung bioengineering and regeneration",Lund,Sweden,Research fellow,Exploration of the extracellular matrix role in idiopatic pulmonary fibrosis and utilization/optimization of ex vivo  chronic lung disease models.
+Select Research Experience,res,print,3,11.2015,11.2017,Helmholtz Zentrum Munchen,Comprehensive Pneumology Center,Munich,Germany,Research Associate,Development of an ex vivo human model of idiopathic pulmonary fibrosis through the use of human precision-cut lung slices (PCLS)
+Select Research Experience,res,print,4,08.2017,10.2017,Lund University,"Experimental Medical Sciences, Lung biology group",Lund,Sweden,Research internship,The role of glycosaminoglycans (GAGs) in epithelial to mesenchymal transition (EMT)
+Select Research Experience,res,hideit,5,02.2017,03.2017,Ludwig Maximilian University,Gene Center,Lund,Sweden,Research internship,X-ray crystallography and cryo-EM structure determination
+Select Research Experience,res,print,6,12.2014,08.2015,Northwestern University,Pulmonary and Critical Care Department,"Chicago, IL",USA,Research Assistant,The effect of hypercapnia on immune response of THP-1 macrophages 
+Publications,,,,,,,,,,,
+Select Research Supervision,,print,1,2022,,Irene Urrecho,,,Spain,Bachelor Thesis,
+Select Research Supervision,,print,2,2022,,Inés Míngues Sant,,,Spain,Bachelor Thesis,
+Select Research Supervision,,hideit,3,2021,,Pieter Plattiau ,,,Balgium,Bachelor Thesis,
+Select Research Supervision,,hideit,4,2021,,Pablo Ovejero ,,,Spain,Bachelor Thesis,
+Select Research Supervision,,print,5,2021,,Laura Martinez ,,,Spain,Bachelor Thesis,
+Select Research Supervision,,hideit,6,2021,,MeiFeng Yu ,,,Canada,Bachelor Thesis,
+Select Research Supervision,,print,7,2020,,Thomas Syski ,,,Sweden,Master Thesis,
+Select Research Supervision,,hideit,8,2019,,Eliora Sy Wee ,,,Canada,Bachelor Thesis,
+Selected Technical Trainees,,print,,2022,,Irene Urrecho,Bachelor Student,,,CUT&RUN,
+Selected Technical Trainees,,print,,2021,,Roberta Battistella,PhD Student,,,qPCR,
+Selected Technical Trainees,,print,,2021,,Linda Decker,Master Student,,,qPCR,
+Selected Technical Trainees,,print,,2020,,Emil Rehnberg,Master Student,,,"qPCR, Lyophilization",
+Selected Technical Trainees,,print,,2020,,Caroline Periera,PhD Student,,,"Precision Cut Lung Slices, Immunoblotting, qPCR, wholemount immunofluorescence.",
+Selected Technical Trainees,,hideit,,2019,,Eliora Sy Wee ,Bachelor Student,,,"Immunoblotting, qPCR, immunofluorescence",
+Selected Technical Trainees,,hideit,,2019,,Anna NirooMand,Medical Student,,,qPCR,
+Selected Technical Trainees,,hideit,,2019,,Martina De Santis,PhD student ,,,3D (Bio)printing,
+Selected Technical Trainees,,print,,2019,,Sinem Tas,Post Doc,,,3D (Bio)prinitng,
+Selected Technical Trainees,,print,,2018,,John Stegmayr,Post Doc,,,Precision Cut Lung Slices,
+Selected Technical Trainees,,hideit,,2018,,Margarita Mittendorfer,Bachelor Student,,,Hydroxyproline Assay,
+Selected Technical Trainees,,hideit,,2017,,Michael Gerckens,Medical Students,,,Precision Cut Lung Slices,
+Selected Technical Trainees,,hideit,,2017,,Arunima Seal,PhD Student,,,Precision Cut Lung Slices,
+Select Invited Talks,,hideit,1,2020,,Linköping Universit,,Linköpin,Sweden,,Role of Hippo signaling and Yap/Taz in the Lung Epithelium during Fibrosis
+Select Invited Talks,,hideit,2,2018,,Lund University,,Lund,Sweden,,A deranged Yap/Taz axis in lung epithelial progenitor cells leads to increased extracellular matrix remodeling through lysyl oxidase in idiopathic pulmonary fibrosis
+Select Invited Talks,,hideit,3,2018,,Nottigham University - Lund University,PCLS symposium,Lund,Sweden,,Drug Evaluation using ex vivo diseas models developed in PCLS - Magnifying on Fibros
+Select Invited Talks,,hideit,4,2017,,University of Colorado,,"Denver, CO",USA,,A novel ex vivo model to induce early fibrosis-like changes in human precision-cut lung slices
+Select Invited Talks,,hideit,5,2017,,American Thoracic Society (ATS) conference,,"Washington, DC",USA,,Ex Vivo 3D Lung Tissues 101
+Select Conference Abstracts,,print,,2022,,European Molecular Imaging Meeting,,Thessaloniki,Greece,Oral Presentation,inFLATION: INfusion of Fluorescent Labelled Antibodies in Tissue of Intact Org
+Select Conference Abstracts,,print,,2021,,European Respiratory Sociecty (ERS) Congress ,,Virtual,,Poster Presentation. Published,3D printing aids simultaneous isolation of proximal and distal lung epithelial progenitors from individual mice
+Select Conference Abstracts,,print,,2021,,Vermont Stem Cell Confernce (2021) ,,Virtual,,Oral Presentation (Outstanding Abstract Achievement Award),Dual Isolation of Proximal and Distal Lung Epithelial Progenitor Cells and Their Distribution in Intact Murine Lungs Visualized Using Light Sheet Microscopy
+Select Conference Abstracts,,print,,2021,,ERS Lung Science Confrence,,Virtual,,Poster Presentation,3D printing aids simultaneous isolation of proximal and distal lung epithelial progenitors from individual mice
+Select Conference Abstracts,,print,,2019,,Vermont Stem Cell Conference,,Virtual,,Poster Presentation (Best Poster Award),Derangement of alveolar type II progenitor cells contribute to extracellular matrix deposition
+Contributions to conferences,,print,,2022,,Lund Respiratory Network (LURN),Session Chair,Ystad,Sweden,,
+Contributions to conferences,,print,,2021,,Lung Science Conference (LSC),Session Chair,Virtual,,,
+Contributions to conferences,,print,,2019,,Vermont Stem Cell Conference,Workshop Organizer,"Burlington, VA",USA,,
+Contributions to conferences,,print,,2019,,European Respiratory Society (ERS) Congress,Abstract Reviewer,Madrid,Spain,,
+Contributions to conferences,,hideit,,2018,,Lund Respiratory Network (LURN) “The Aging Lun,Session Chair,Ystad,Sweden,,
+Contributions to conferences,,hideit,,2018,,European Respiratory Society (ERS) Congress,Abstract Reviewer,Paris,France,,
+Contributions to conferences,,hideit,,2018,,Lung Science Conference (LSC),Session Chair,Estoril,Portugal,,
+Select Leadership Roles,,print,,12.2021,12.2022,Lund University's Academic Appoint Board,,,,,
+Select Leadership Roles,,print,,2020,2021,Co-organized the Swedish Bioinformatics Workshop 2021,,,,,
+Select Leadership Roles,,print,,2019,,Selected to reprecent the WCMM center at strategic meeting the KAW foundation and Wallenberg family representatives.,,,,,
+Select Leadership Roles,,print,,2019,,Co-organized Lund University Stem Cell Center Retreat,,Ystad,Sweden,,
+Select Leadership Roles,,hideit,,2019,,Organizer of WCMM research school 1st Retreat,,Barsebäc,Sweden,,
+Select Leadership Roles,,hideit,,2018,2019,Elected WCMM Research School Trainee Representative,,,,,
+Select Leadership Roles,,print,,2018,,Organized Symposium on Precision Cut Lung Slice in collaboration with Nottingham University,,,,,
+Professional Certificates ,,print,,2019,,SciLife Labs and NBIS, Omics Integration and Systems Biology,Stockholm,Sweden,,
+Professional Certificates ,,print,,2018,,RaukR 2018. Advanced R programming for Bioinformatics Summer School,,"Visby, Götlan",Sweden,,
+Community Service/Outreach Activity,,print,,2019,,Appeared on Swedish TV_SVT: Vetenskapens värld – Organ på,,,,,
+Community Service/Outreach Activity,,print,,2019,,NMT days - WCMM research school outreach presentation, Organ 3D printing,,,,
+Languages,,print,,Native like,,English,,,,,
+Languages,,print,,Native,,Arabic,,,,,
+Languages,,print,,Proficient,,Italian,,,,,
+Languages,,print,,Intermediate,,Swedish,,,,,

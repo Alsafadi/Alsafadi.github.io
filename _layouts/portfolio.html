@@ -4,33 +4,16 @@
 {% include head.html %}
 
 <body id="page-top">
-  <button id="myBtn" onclick="topFunction()"  title="Go to top">Top <i class="fa-solid fa-turn-up"></i></button>
-  <div class="page-content">  
-  {% include basicinfo.html %}
+  <button id="myBtn" onclick="topFunction()" title="Go to top">Top <i class="fa-solid fa-turn-up"></i></button>
+  <div class="page-content">
+    {% include basicinfo.html %}
 
+    {% capture my_include %}{% include intro.md %}{% endcapture %}
+    {{ my_include | markdownify }}
 
-<div class="printportfolio noprint" onclick="openAndPrint()">Print Portfolio</div>
+    {% include portfolioMenu.html %}
 
-{% capture my_include %}{% include intro.md %}{% endcapture %}
-{{ my_include | markdownify }}
-
-<div id="topmenu1 noprint">
-    <div class="topmenuitems1 noprint">
-      {% assign sections = site.data.portfoliosections %}
-      {% for s in sections %}
-      <div class="menuitem noprint" onclick="navigate('#s{{ forloop.index }}')">
-        
-        <a class="menunumber noprint">{{ forloop.index }}</a>
-        
-        <div class = "topmenuitem1 noprint" onclick="navigate('#s{{ forloop.index }}')">{{ s.name }}</div>
-      
-      </div>
-      {% endfor %}
-    </div>
-</div>
-
-
-{% include sections.html %}
+    {% include sections.html %}
 
 </body>
 
