@@ -30,82 +30,77 @@
         <div class="{{ ulclass }} printable">
 
           {% assign printItems = g.items | where: "printable", "print"%}
-          {% if printItems.size > 0 or g.name == "Publications" %}
+          <div class="showtitle">
 
-          <h4>{{ g.name }}</h4>
-
-          {% else %}
-          <div class="hidetitle">
+            <div>
             <h4>{{ g.name }}</h4>
-          </div>
-          {% endif %}
-
-          {% if g.name == "Publications" %}
-          {% assign lastindex = 1 %}
-          <div class="under-text">
-            <p><strong>h-index: </strong>{{ site.data.basic.metrics.hindex }}. <strong>Citations: </strong>{{
-              site.data.basic.metrics.citations }}. As of: {{ site.data.basic.metrics.date }}. <a
-                href="https://scholar.google.com/citations?user=Gw3sPAUAAAAJ&hl=en"><i
-                  class="ai ai-google-scholar-square noprint"></i>Profile</a></p>
-            <table id="h-index"></table>
+            </div>
+            <div>
+            <button class="selectbtn noprint" style="display: none;"
+            onclick="changePrintStatusGroup('{{ gindex }}-');">(de)select
+            all</button>
+            </div>
 
           </div>
-          <iframe id="publications" class="publications" style="overflow: hidden;"
-            src="https://lup.lub.lu.se/search/publication?embed=1&limit=250&q=author+exact+ha8343al&sort=publicationstatus.desc&sort=year.desc"
-            width="100%" height="300" allowtransparency="true" frameborder="0">
-          </iframe>
+          <div>
+            {% if g.name == "Publications" %}
+            {% assign lastindex = 1 %}
 
-          {% else %}
-          <ul>
-            {% for item in g.items %}
-            {% assign lastindex = forloop.length %}
-            {% if forloop.index > site.data.basic.config.count %} {% assign disp="display:none;" %} {% else %} {% assign
-            disp="display:block;" %} {% endif %}
-            <li id="{{ gindex }}-{{ forloop.index }}" style="{{ disp }}" class="{{ item.printable }}">
-              <div class="fullitem">
-                <div class="itemleft">
-                  {{item.from }} {% if item.to %} - {{ item.to }}{% endif %}
-                </div>
+            {% include publications.html %}
 
-                <div class="itemright">
-                  {% if item.primary or item.city or item.country %}
-                  <div class="line">
-                    <div class="lineleft"><strong>{{ item.primary }}. </strong>{% if item.city %}{{ item.city }}, {%
-                      endif
-                      %}{% if item.country %}{{ item.country }}{% endif %}</div>
+            {% else %}
+            <ul>
+              {% for item in g.items %}
+              {% assign lastindex = forloop.length %}
+              {% if forloop.index > site.data.basic.config.count %} {% assign disp="display:none;" %} {% else %} {%
+              assign
+              disp="display:block;" %} {% endif %}
+              <li id="{{ gindex }}-{{ forloop.index }}" style="{{ disp }}" class="{{ item.printable }}">
+                <div class="fullitem">
+                  <div class="itemleft">
+                    {{item.from }} {% if item.to %} - {{ item.to }}{% endif %}
                   </div>
-                  {% endif %}
-                  {% if item.secondary or item.other %}
-                  <div class="line">
-                    <div class="lineleft">{% if item.secondary %}{{ item.secondary }}. {% endif %} <i>{{
-                        item.other}}</i>
+
+                  <div class="itemright">
+                    {% if item.primary or item.city or item.country %}
+                    <div class="line">
+                      <div class="lineleft"><strong>{{ item.primary }}. </strong>{% if item.city %}{{ item.city }}, {%
+                        endif
+                        %}{% if item.country %}{{ item.country }}{% endif %}</div>
                     </div>
+                    {% endif %}
+                    {% if item.secondary or item.other %}
+                    <div class="line">
+                      <div class="lineleft">{% if item.secondary %}{{ item.secondary }}. {% endif %} <i>{{
+                          item.other}}</i>
+                      </div>
+                    </div>
+                    {% endif %}
+                    {% if item.otherhidden %}
+                    <div class="line">
+                      <div class="lineleft"><i> "{{ item.otherhidden }}" </i></div>
+                    </div>
+
+                    {% endif %}
+
                   </div>
-                  {% endif %}
-                  {% if item.otherhidden %}
-                  <div class="line">
-                    <div class="lineleft"><i> "{{ item.otherhidden }}" </i></div>
+                  <div class="checkbox">
+                    <input id="cb{{ gindex }}-{{ forloop.index }}" type="checkbox" class="printCheck noprint"
+                      onload="setPrintStatus(this,'{{item.printable}}');"
+                      onchange="changePrintStatus(this, '{{ gindex }}-{{ forloop.index }}');">
                   </div>
-
-                  {% endif %}
-
                 </div>
-                <div class="checkbox">
-                  <input id="cb{{ gindex }}-{{ forloop.index }}" type="checkbox" class="printCheck noprint"
-                    onload="setPrintStatus(this,'{{item.printable}}');"
-                    onchange="changePrintStatus(this, '{{ gindex }}-{{ forloop.index }}');">
-                </div>
-              </div>
 
-            </li>
-            {% endfor%}
-          </ul>
-          {% endif %}
+              </li>
+              {% endfor%}
+            </ul>
+            {% endif %}
 
-          {% if lastindex > site.data.basic.config.count %}
-          <a onclick="toggleDisplay('{{ gindex }}',{{ site.data.basic.config.count }}-1)" class="moreinfo  noprint"
-            id="toggle-{{ gindex }}">Show More!</a>
-          {% endif %}
+            {% if lastindex > site.data.basic.config.count %}
+            <a onclick="toggleDisplay('{{ gindex }}',{{ site.data.basic.config.count }}-1)" class="moreinfo  noprint"
+              id="toggle-{{ gindex }}">Show More!</a>
+            {% endif %}
+          </div>
         </div>
       </section>
       {% endfor %}

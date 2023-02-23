@@ -93,6 +93,7 @@ function changePrintStatus(cb, itemID) {
     } else {
         element.className = "hideit";
     }
+
 }
 
 $(document).ready(function () {
@@ -118,12 +119,75 @@ function setPrinting(btn) {
 
     checkboxes = document.getElementsByClassName("printCheck");
     for (var i = 0; i < checkboxes.length; i++) {
-        checkboxes[i].style.display = "block";
+        checkboxes[i].style.display = "inline-block";
     }
+    buttons = document.getElementsByClassName("selectbtn");
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].style.display = "inline-block";
+    }
+
 }
 
 function reset() {
-    window.location.reload;
+    window.location.reload();
+}
+
+
+function changePrintStatusGroup(section) {
+    checkboxes = document.getElementsByClassName("printCheck");
+    const arr = []
+    for (var i = 0; i < checkboxes.length; i++) {
+        cbID = checkboxes[i].getAttribute("id");
+        const firstPart = cbID.split('-')[0]
+
+        if (firstPart + "-" == "cb" + section) {
+            arr.push(i)
+        }
+    };
+
+    if (checkboxes[arr[0]].checked == true) {
+        for (var i = 0; i < arr.length; i++) {
+            cbID = checkboxes[arr[i]].getAttribute("id");
+            itemID = cbID.substring(2, cbID.length);
+            checkboxes[arr[i]].checked = false;
+            changePrintStatus(checkboxes[i], itemID);
+        }
+
+    } else {
+        for (var i = 0; i < arr.length; i++) {
+            cbID = checkboxes[arr[i]].getAttribute("id");
+            itemID = cbID.substring(2, cbID.length);
+            checkboxes[arr[i]].checked = true;
+            changePrintStatus(checkboxes[i], itemID);
+        }
+    }
+
+
+
+}
+
+function sectionsTest() {
+    sections = document.querySelectorAll('[id*="#g"]');
+
+    for (var i = 0; i < sections.length; i++) {
+
+        sectionid = sections[i].getAttribute("id");
+        if (sectionid != "#g6") {
+            sect = sectionid.substring(2);
+
+            sec = sect + "-"
+            elems = document.querySelectorAll('[id*="cb' + sec + '"]');
+            var count = 0;
+            for (var a = 0; a < elems.length; a++) {
+                if (elems[a].checked == true) {
+                    count++;
+                }
+            }
+            if (count == 0) {
+                sections[i].style.display = "none";
+            }
+        }
+    }
 }
 
 function openAndPrint() {
@@ -144,5 +208,10 @@ function openAndPrint() {
 
     document.getElementById("topmenu1").style.display = "none";
 
+
+    sectionsTest();
+
     print();
+
 }
+

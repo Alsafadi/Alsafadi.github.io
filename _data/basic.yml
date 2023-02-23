@@ -1,6 +1,7 @@
 main:
   title: CV - Hani N. Alsafadi
   name: Hani N. Alsafadi
+  lucris: https://lup.lub.lu.se/search/publication?embed=1&limit=250&q=author+exact+ha8343al&sort=publicationstatus.desc&sort=year.desc
   demographics:
     - item: Personnummer
       value: 19910317-7110

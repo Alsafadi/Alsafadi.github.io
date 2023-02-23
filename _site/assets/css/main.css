@@ -451,9 +451,10 @@ ul.social-buttons1 {
   .page-content {
     position: relative;
     background: #fff;
-    margin: 0;
-    width: 900px;
+    width: 90%;
+    margin: 50% - (width/2);
     padding: 50px;
+
   }
 
   .oddul,
@@ -495,6 +496,10 @@ ul.social-buttons1 {
     margin-bottom: 0;
     padding-bottom: 0;
 
+  }
+
+  .rounded-circle {
+    width: 200px;
   }
 }
 
@@ -654,9 +659,7 @@ a:hover {
   background-color: #555;
 }
 
-#container h4 {
-  border-bottom: 1px solid #d9ab43;
-}
+#container h4 {}
 
 li {
   list-style: circle;
@@ -716,4 +719,21 @@ blockquote p {
 
 .printGreen {
   background-color: lightseagreen;
+}
+
+
+.selectbtn {
+  float: right;
+  background-color: #d9ab43;
+  border-radius: 10px;
+  border: none;
+
+  align-self: start;
+  margin-bottom: 5px;
+}
+
+.showtitle {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  border-bottom: 1px solid #d9ab43;
 }
