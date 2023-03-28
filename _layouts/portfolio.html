@@ -7,14 +7,10 @@
   <button id="myBtn" onclick="topFunction()" title="Go to top">Top <i class="fa-solid fa-turn-up"></i></button>
   <div class="page-content">
     {% include basicinfo.html %}
-
     {% capture my_include %}{% include intro.md %}{% endcapture %}
     {{ my_include | markdownify }}
-
     {% include portfolioMenu.html %}
-
     {% include sections.html %}
-
 </body>
 
 </html>
