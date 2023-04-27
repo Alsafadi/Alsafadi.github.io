@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html>
+<title>Helsingborgsmoske Prayer Times</title>
 
-<body>
-
-  <div id="container_div">
-    <div>
-
+{% include head.html %}
+<body">
 
 
+  <script src="assets/js/times.js"></script>
+  <script src="assets/js/updateTimes.js"></script>
+  <link href="assets/css/prayers.css" rel="stylesheet" type="text/css">
+
+
+  <div class="mainContainer">
+    <div class="topHeader">
+      <div class="logo"><img class="logoimg" src="/assets/img/Logo_established.png" /></div>
+      <div class="title">
+        <div class="titleTop">Helsingborgs Moské</div>
+        <div class="titleBottom">مسجد هلسنجبوري</div>
+      </div>
     </div>
 
-    <div>
-
+    <div class="Content">
+      <div class="leftside">
+        <div class="datetime">
+          <div class="clock">
+            <div class="num">
+              <p id="current-hour"></p>
+            </div>
+            <div class="sep">:</div>
+            <div class="num">
+              <p id="current-minute"></p>
+            </div>
+            <div class="sep">:</div>
+            <div class="num">
+              <p id="current-second"></p>
+            </div>
+          </div>
+          <div class="date">
+            <p id="current-date"></p>
+          </div>
+        </div>
+        <div class="ptimes">
+          <table id="salah-table"></table>
+        </div>
+      </div>
+      <div class="rightside">
+        <div class="rightContent">
+          <div id="imageContainer">
+            {% for image in site.static_files %}
+            {% if image.path contains 'hbg/' %}
+            <img src="{{ image.path }}" alt="image" />
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
     </div>
-
   </div>
 
-</body>
+
+
+
+
+  </body>
 
 </html>

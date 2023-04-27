@@ -1,0 +1,114 @@
+body {
+    background-color: #002434;
+    width: 1920px;
+    height: 1080px;
+}
+
+.logoimg {
+
+    width: 200px;
+}
+
+.topHeader {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.title {
+    padding-top: 25px;
+    font-size: 55px;
+    text-align: center;
+    color: #f0ca76;
+}
+
+td {
+    text-align: center;
+    width: 33%;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.Content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.leftside,
+.rightside {
+    padding: 25px;
+}
+
+.rightContent {
+    background-color: #f0ca76;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.rightContent img {
+    border-radius: 20px;
+    border-color: #f0ca76;
+    border-width: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.datetime {
+    display: grid;
+    background-color: #f0ca76;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    height: 25%;
+}
+
+.clock {
+    color: #002434;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+
+}
+
+.date {
+    color: #002434;
+    font-size: 50px;
+    text-align: center;
+}
+
+.num,
+.sep {
+    font-size: 75px;
+    text-align: center;
+}
+
+.num {
+    font-weight: bold;
+}
+
+#salah-table {
+    width: 100%;
+    color: #002434;
+    font-family: "Avenir Light", sans-serif;
+    font-size: 60px;
+    font-weight: thin;
+}
+
+.ptimes {
+    background-color: #f0ca76;
+    height: 73%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.nextPrayer {
+    font-weight: bold;
+    text-underline-position: under;
+    background-color: #002434;
+    color: #f0ca76;
+}
