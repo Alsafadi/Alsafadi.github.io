@@ -11,16 +11,27 @@ body {
 
 .topHeader {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    width: 70%;
-    margin-left: 15%;
+    grid-template-columns: 1fr 4fr;
+}
+
+.logoo {
+    right: 0;
+    text-align: right;
+    margin-top: 20px;
 }
 
 .title {
-    padding-top: 25px;
-    font-size: 55px;
-    text-align: center;
+    font-size: 70px;
+    text-align: left;
+    vertical-align: middle;
     color: #f0ca76;
+    padding-top: 53px;
+    padding-left: 20px;
+}
+
+.titleTop,
+.titleBottom {
+    display: inline;
 }
 
 td {
@@ -55,6 +66,7 @@ td {
     border-width: 10px;
     max-width: 100%;
     max-height: 100%;
+    scale: 0.99;
 }
 
 
