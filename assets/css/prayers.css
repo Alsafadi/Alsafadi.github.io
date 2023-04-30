@@ -6,12 +6,13 @@ body {
 
 .logoimg {
 
-    width: 200px;
+    width: 195px;
 }
 
 .topHeader {
     display: grid;
     grid-template-columns: 1fr 4fr;
+
 }
 
 .logoo {
@@ -27,6 +28,8 @@ body {
     color: #f0ca76;
     padding-top: 53px;
     padding-left: 20px;
+
+
 }
 
 .titleTop,
@@ -47,6 +50,8 @@ td {
 .Content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    scale: 0.90;
+    transform: translateY(-5%);
 }
 
 .leftside,
