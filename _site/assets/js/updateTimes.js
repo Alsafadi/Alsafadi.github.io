@@ -1,3 +1,20 @@
+function addTime(timeString, added) {
+    let [hours, minutes] = timeString.split(":");
+
+
+    let dateObj = new Date();
+    dateObj.setHours(hours);
+    dateObj.setMinutes(minutes);
+
+
+    dateObj.setMinutes(dateObj.getMinutes() + added);
+
+
+    let updatedTimeString = `${dateObj.getHours().toString().padStart(2, "0")}:${dateObj.getMinutes().toString().padStart(2, "0")}`;
+
+    return (updatedTimeString);
+}
+
 function updateTime() {
     var currentTime = new Date();
     var hours = currentTime.getHours();
@@ -11,41 +28,21 @@ function updateTime() {
     document.getElementById("current-minute").innerHTML = minutes;
     document.getElementById("current-second").innerHTML = seconds;
 
-    const weekday = ["Söndag", "Mondag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag"];
-    const weekdayAR = ["الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"];
+    const weekday = ["Söndag", "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag"];
     let day = weekday[currentTime.getDay()];
-    let dayAR = weekdayAR[currentTime.getDay()];
-    var formattedDate = day + ", " + moment().format("YYYY-MM-DD") + ", " + dayAR;
+    var formattedDate = day + ", " + moment().format("YYYY-MM-DD");
     document.getElementById("current-date").innerHTML = formattedDate;
+    var hijri = new Intl.DateTimeFormat('ar-FR-u-ca-islamic', { day: 'numeric', month: 'long', weekday: 'long', year: 'numeric' }).format(Date.now());
+    document.getElementById("current-hijri-date").innerHTML = hijri;
 
     const todaysPrayers = prayers.find(
-
         (prayer) =>
             prayer.month == moment().month() + 1 &&
             prayer.date == moment().format("MM/DD")
-
     ).times;
 
-    function addTime(timeString) {
-        let [hours, minutes] = timeString.split(":");
-
-
-        let dateObj = new Date();
-        dateObj.setHours(hours);
-        dateObj.setMinutes(minutes);
-
-
-        dateObj.setMinutes(dateObj.getMinutes() + 30);
-
-
-        let updatedTimeString = `${dateObj.getHours().toString().padStart(2, "0")}:${dateObj.getMinutes().toString().padStart(2, "0")}`;
-
-        return (updatedTimeString);
-    }
-
-
     const currentPrayerIndex = Object.values(todaysPrayers).findIndex(
-        (prayerTime) => addTime(prayerTime) > moment().format("HH:mm")
+        (prayerTime) => addTime(prayerTime, 30) > moment().format("HH:mm")
     );
 
     $("#salah-table").empty();
@@ -54,13 +51,18 @@ function updateTime() {
         $("#salah-table").append(
             `<tr class="${currentPrayerIndex === index ? "nextPrayer" : "prayer"}">
           <td>${prayerName}</td>
-          <td>${prayerTime}</td>
+          <td>
+          <div class="timeTop">${prayerTime}</div>
+          <div class="${currentPrayerIndex === index ? "timeBottom" : "iqamaHidden"}">Iqama: ${iqama[prayerName]}</div>
+          </td>
           <td>${prayerNames[prayerName]}</td>
         </tr>`
         )
     );
 
+
 }
+
 
 setInterval(updateTime, 1000);
 

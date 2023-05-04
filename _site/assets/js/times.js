@@ -4389,3 +4389,11 @@ prayerNames = {
     "Maghrib": "المغرب",
     "Isha": "العشاء"
 }
+iqama = {
+    "Fajr": "+20 min",
+    "Shuruq": "",
+    "Dhuhr": "+10 min",
+    "Aser": "+10 min",
+    "Maghrib": "+5 min",
+    "Isha": "+10 min"
+}

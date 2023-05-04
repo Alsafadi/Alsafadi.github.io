@@ -22,7 +22,7 @@ body {
 }
 
 .title {
-    font-size: 70px;
+    font-size: 65px;
     text-align: left;
     vertical-align: middle;
     color: #f0ca76;
@@ -94,7 +94,7 @@ td {
 
 .date {
     color: #002434;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -128,4 +128,13 @@ td {
     text-underline-position: under;
     background-color: #002434;
     color: #f0ca76;
+}
+
+.iqamaHidden {
+    display: none;
+}
+
+.nextPrayer .timeBottom {
+    font-size: 30px;
+    font-weight: thin;
 }
