@@ -1,5 +1,5 @@
 ---
-permalink: /moske/
-redirect_to: 
+redirect_from:
+    - /moske/
     - http://192.168.68.112:8080/browserfs.html
 ---
