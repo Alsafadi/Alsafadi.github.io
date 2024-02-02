@@ -15,6 +15,8 @@ analytics:
 collections:
   entries:
   description:
+plugins:
+  - jekyll-redirect-from
     
 markdown: kramdown
 
