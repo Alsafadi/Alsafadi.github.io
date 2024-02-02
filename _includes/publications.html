@@ -6,6 +6,46 @@
     <table id="h-index"></table>
 
 </div>
+<!--
 <iframe id="publications" class="publications" style="overflow: hidden;" src="{{ site.data.basic.main.lucris }}"
     width="100%" height="300" allowtransparency="true" frameborder="0">
 </iframe>
+-->
+
+<ol>
+    {% assign citations = site.data.citations | sort: 'Year' | reverse %}
+    {% for c in citations %}
+    {% assign lastindex = forloop.length %}
+    {% if forloop.index > site.data.basic.config.ccount %} {% assign disp="display:none;" %} {% else %} {% assign
+    disp="display:block;" %} {% endif %}
+
+    <li id="{{ gindex }}-{{ forloop.index }}" style="{{ disp }}" class="{{ item.printable }}">
+        <div class="citation">
+            <span class="authors">{{ c.Authors }}. </span>
+            {% if c.Title %}
+            <span class="ctitle">{{ c.Title }}. </span>
+            {% endif %}
+            {% if c.Publication %}
+            <span class="journal">{{ c.Publication }} </span>
+            {% endif %}
+            {% if c.Year %}
+            <span class="cyear">{{ c.Year }}; </span>
+            {% endif %}
+            {% if c.Volume %}
+            <span class="cvol">{{ c.Volume }}{% if c.Number %}({{ c.Number }}){% endif%}: </span>
+            {% endif %}
+            {% if c.Pages %}
+            <span class="cpages">{{ c.Pages }}. </span>
+            {% endif %}
+        </div>
+
+    </li>
+
+
+    {% endfor %}
+
+
+
+
+
+</ol>

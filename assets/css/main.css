@@ -251,6 +251,40 @@ h4 {
 
 }
 
+ol {
+  counter-reset: LIST-ITEMS
+}
+
+ol li {
+  display: inline;
+
+}
+
+ol li:before {
+  float: left;
+  content: counter(LIST-ITEMS) ".";
+  counter-increment: LIST-ITEMS;
+
+}
+
+.citation {
+  display: block;
+  text-align: left;
+  margin: 5px;
+  text-indent: -16px;
+  padding-left: 42px;
+}
+
+.citation:hover {
+  background-color: #cdf0ff;
+}
+
+.journal {
+  font-style: italic;
+}
+
+
+
 ul {
 
   padding-inline-start: 0;
@@ -354,6 +388,15 @@ ul {
     padding-left: 0;
   }
 
+  .fullitem {
+    display: block;
+    text-align: center;
+  }
+
+  .fullitem:hover {
+    background-color: rgb(231, 231, 231);
+  }
+
 
   .profile_image {
     display: contents;
@@ -364,15 +407,6 @@ ul {
     transform: scale(0.95);
     transform-origin: top;
     padding: 5%;
-  }
-
-  .fullitem {
-    display: block;
-    text-align: center;
-  }
-
-  .fullitem:hover {
-    background-color: rgb(231, 231, 231);
   }
 
   .itemright {
