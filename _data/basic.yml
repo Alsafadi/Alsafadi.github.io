@@ -6,35 +6,36 @@ main:
     - item: Personnummer
       value: 19910317-7110
     - item: Nationality
-      value: Palestinian
+      value: Swedish
     - item: Gender
       value: Male
     - item: Marital Status
       value: Married
-  homeaddress: 'Revärgatan 5 LGH 1002, 254 61 Helsingborg, Sweden'
-  workaddress: 'Klinikgatan 26, 223 62 Lund, Sweden'
+  homeaddress: "Revärgatan 5 LGH 1002, 254 23 Helsingborg, Sweden"
+  workaddress: "Klinikgatan 26, 223 62 Lund, Sweden"
   cell: +46(0)768722033
   phone: +46(0)46 222 9671
-  email: hani.alsafadi@med.lu.se
+  email: hani.alsafadi@med.lu.se / hani.ns.safadi@gmail.com
   img: /assets/img/alsafadi.png
   links:
-    - url: 'https://orcid.org/0000-0002-1186-2517'
+    - url: "https://orcid.org/0000-0002-1186-2517"
       icon: ai ai-orcid
       alt: Orcid
-    - url: 'https://portal.research.lu.se/en/persons/hani-alsafadi'
+    - url: "https://portal.research.lu.se/en/persons/hani-alsafadi"
       icon: fas fa-user-circle
       alt: LU Research Portal
-    - url: 'https://www.linkedin.com/in/hanialsafadi/'
+    - url: "https://www.linkedin.com/in/hanialsafadi/"
       icon: fab fa-linkedin-in
       alt: LinkedIn
-    - url: 'https://twitter.com/Alsafadi_HN'
+    - url: "https://twitter.com/Alsafadi_HN"
       icon: fab fa-twitter
       alt: Twitter
 config:
   count: 4
   ecount: 10
-  ccount: 16
+  ccount: 24
 metrics:
   hindex: 12
-  citations: 1214
-  date: '2024-02-01'
+  i10index: 13
+  citations: 1420
+  date: "2024-09-05"

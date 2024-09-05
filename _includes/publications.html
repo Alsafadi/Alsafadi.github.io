@@ -1,10 +1,13 @@
 <div class="under-text">
-    <p><strong>h-index: </strong>{{ site.data.basic.metrics.hindex }}. <strong>Citations: </strong>{{
-        site.data.basic.metrics.citations }}. As of: {{ site.data.basic.metrics.date }}. <a
-            href="https://scholar.google.com/citations?user=Gw3sPAUAAAAJ&hl=en"><i
-                class="ai ai-google-scholar-square noprint"></i>Profile</a></p>
-    <table id="h-index"></table>
-
+  <p>
+    <strong>h-index: </strong>{{ site.data.basic.metrics.hindex }}.
+    <strong>Citations: </strong>{{ site.data.basic.metrics.citations }}. As of:
+    {{ site.data.basic.metrics.date }}.
+    <a href="https://scholar.google.com/citations?user=Gw3sPAUAAAAJ&hl=en"
+      ><i class="ai ai-google-scholar-square noprint"></i>Profile</a
+    >
+  </p>
+  <table id="h-index"></table>
 </div>
 <!--
 <iframe id="publications" class="publications" style="overflow: hidden;" src="{{ site.data.basic.main.lucris }}"
@@ -13,39 +16,38 @@
 -->
 
 <ol>
-    {% assign citations = site.data.citations | sort: 'Year' | reverse %}
-    {% for c in citations %}
-    {% assign lastindex = forloop.length %}
-    {% if forloop.index > site.data.basic.config.ccount %} {% assign disp="display:none;" %} {% else %} {% assign
-    disp="display:block;" %} {% endif %}
+  {% assign citations = site.data.citations | sort: 'Year' | reverse %} {% for c
+  in citations %} {% assign lastindex = forloop.length %} {% if forloop.index >
+  site.data.basic.config.ccount %} {% assign disp="display:block;" %} {% else %}
+  {% assign disp="display:block;" %} {% endif %}
 
-    <li id="{{ gindex }}-{{ forloop.index }}" style="{{ disp }}" class="{{ item.printable }}">
-        <div class="citation">
-            <span class="authors">{{ c.Authors }}. </span>
-            {% if c.Title %}
-            <span class="ctitle">{{ c.Title }}. </span>
-            {% endif %}
-            {% if c.Publication %}
-            <span class="journal">{{ c.Publication }} </span>
-            {% endif %}
-            {% if c.Year %}
-            <span class="cyear">{{ c.Year }}; </span>
-            {% endif %}
-            {% if c.Volume %}
-            <span class="cvol">{{ c.Volume }}{% if c.Number %}({{ c.Number }}){% endif%}: </span>
-            {% endif %}
-            {% if c.Pages %}
-            <span class="cpages">{{ c.Pages }}. </span>
-            {% endif %}
-        </div>
+  <li id="{{ gindex }}-{{ forloop.index }}" style="{{ disp }}" class="print">
+    <div class="citation">
+      <span class="authors">{{ c.Authors }}. </span>
+      {% if c.Title %}
+      <span class="ctitle">{{ c.Title }}. </span>
+      {% endif %} {% if c.Publication %}
+      <span class="journal">{{ c.Publication }} </span>
+      {% endif %} {% if c.Year %}
+      <span class="cyear">{{ c.Year }}; </span>
+      {% endif %} {% if c.Volume %}
+      <span class="cvol"
+        >{{ c.Volume }}{% if c.Number %}({{ c.Number }}){% endif%}:
+      </span>
+      {% endif %} {% if c.Pages %}
+      <span class="cpages">{{ c.Pages }}. </span>
+      {% endif %}
+      <div class="checkbox">
+        <input
+          id="cb{{ gindex }}-{{ forloop.index }}"
+          type="checkbox"
+          class="printCheck noprint"
+          onload="setPrintStatus(this,'{{item.printable}}');"
+          onchange="changePrintStatus(this, '{{ gindex }}-{{ forloop.index }}');"
+        />
+      </div>
+    </div>
+  </li>
 
-    </li>
-
-
-    {% endfor %}
-
-
-
-
-
+  {% endfor %}
 </ol>
