@@ -3,19 +3,19 @@ main:
   name: Dr. Hani N. Alsafadi
   lucris: https://lup.lub.lu.se/search/publication?embed=1&limit=250&q=author+exact+ha8343al&sort=publicationstatus.desc&sort=year.desc
   demographics:
-    - item: Personnummer
-      value: 19910317-7110
+    #  - item: Personnummer
+    #    value: 19910317-7110
     - item: Nationality
       value: Swedish
     - item: Gender
       value: Male
     - item: Marital Status
-      value: Married
+      value: Married (2 Children)
   homeaddress: "Revärgatan 5 LGH 1002, 254 23 Helsingborg, Sweden"
   workaddress: "Klinikgatan 26, 223 62 Lund, Sweden"
   cell: +46(0)768722033
   phone: +46(0)46 222 9671
-  email: hani.alsafadi@med.lu.se / hani.ns.safadi@gmail.com
+  email: hani.alsafadi@med.lu.se ● hani.ns.safadi@gmail.com
   img: /assets/img/alsafadi.png
   links:
     - url: "https://orcid.org/0000-0002-1186-2517"
@@ -37,5 +37,5 @@ config:
 metrics:
   hindex: 12
   i10index: 13
-  citations: 1420
-  date: "2024-09-05"
+  citations: 1427
+  date: "2024-09-11"

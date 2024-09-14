@@ -1,13 +1,14 @@
 <div class="under-text">
   <p>
     <strong>h-index: </strong>{{ site.data.basic.metrics.hindex }}.
-    <strong>Citations: </strong>{{ site.data.basic.metrics.citations }}. As of:
-    {{ site.data.basic.metrics.date }}.
+    <strong>i10-index: </strong>{{ site.data.basic.metrics.i10index }}.
+    <strong>Citations: </strong>{{ site.data.basic.metrics.citations }}. (As of:
+    {{ site.data.basic.metrics.date }})
+
     <a href="https://scholar.google.com/citations?user=Gw3sPAUAAAAJ&hl=en"
       ><i class="ai ai-google-scholar-square noprint"></i>Profile</a
     >
   </p>
-  <table id="h-index"></table>
 </div>
 <!--
 <iframe id="publications" class="publications" style="overflow: hidden;" src="{{ site.data.basic.main.lucris }}"
@@ -23,7 +24,7 @@
 
   <li id="{{ gindex }}-{{ forloop.index }}" style="{{ disp }}" class="print">
     <div class="citation">
-      <span class="authors">{{ c.Authors }}. </span>
+      <span class="authors">{{ c.Authors }} </span>
       {% if c.Title %}
       <span class="ctitle">{{ c.Title }}. </span>
       {% endif %} {% if c.Publication %}
