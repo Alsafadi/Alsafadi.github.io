@@ -456,6 +456,7 @@ ul.social-buttons1 {
 @media print {
   .noprint {
     visibility: hidden;
+    height: 0;
   }
 
   .hideit {

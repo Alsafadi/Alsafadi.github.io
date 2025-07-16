@@ -1,13 +1,13 @@
 theme: jekyll-theme-cayman
 
-url    : "https://alsafadi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://alsafadi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/" # the subpath of your site, e.g. /blog
 
-title      : Hani N. Alsafadi
-title1      : Hani N. Alsafadi - Portfolio
-email      : hani.ns.safadi@gmail.com #this is also the email contact forms will go to
+title: Hani N. Alsafadi
+title1: Hani N. Alsafadi - Portfolio
+email: hani.ns.safadi@gmail.com #this is also the email contact forms will go to
 description: "Personal Website!"
-author     : Hani N. Alsafadi
+author: Hani N. Alsafadi
 
 analytics:
   google: #Google Analytics tracking code here
@@ -17,7 +17,7 @@ collections:
   description:
 plugins:
   - jekyll-redirect-from
-    
+
 markdown: kramdown
 
 jekyll_admin:

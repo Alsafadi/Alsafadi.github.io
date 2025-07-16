@@ -10,26 +10,29 @@ main:
     - item: Gender
       value: Male
     - item: Marital Status
-      value: Married (2 Children)
+      value: Married (3 Children)
   homeaddress: "Revärgatan 5 LGH 1002, 254 23 Helsingborg, Sweden"
-  workaddress: "Klinikgatan 26, 223 62 Lund, Sweden"
+  workaddress: "Grusvägen 13A, 254 64 Helsingborg, Sweden"
   cell: +46(0)768722033
-  phone: +46(0)46 222 9671
-  email: hani.alsafadi@med.lu.se ● hani.ns.safadi@gmail.com
+  #phone: +46(0)46 222 9671
+  email: hani.alsafadi@scidetech.com ● hani.ns.safadi@gmail.com
   img: /assets/img/alsafadi.png
   links:
+    - url: "https://www.linkedin.com/in/hanialsafadi/"
+      icon: fab fa-linkedin-in
+      alt: LinkedIn
+    - url: "https://www.github.com/alsafadi/"
+      icon: fab fa-github
+      alt: GitHub
     - url: "https://orcid.org/0000-0002-1186-2517"
       icon: ai ai-orcid
       alt: Orcid
     - url: "https://portal.research.lu.se/en/persons/hani-alsafadi"
       icon: fas fa-user-circle
       alt: LU Research Portal
-    - url: "https://www.linkedin.com/in/hanialsafadi/"
-      icon: fab fa-linkedin-in
-      alt: LinkedIn
-    - url: "https://twitter.com/Alsafadi_HN"
-      icon: fab fa-twitter
-      alt: Twitter
+    #- url: "https://twitter.com/Alsafadi_HN"
+    #  icon: fab fa-twitter
+    #  alt: Twitter
 config:
   count: 4
   ecount: 10
